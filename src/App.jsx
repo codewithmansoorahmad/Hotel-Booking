@@ -1,3 +1,4 @@
+import HomePage from "./pages/Home"
 
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
      <h1>react page</h1>
+     <HomePage/>
              
     </>
   )
