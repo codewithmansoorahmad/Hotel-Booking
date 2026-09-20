@@ -1,11 +1,10 @@
 import HomePage from "./pages/Home"
 
-
+import "./css/App.css"
 function App() {
 
   return (
     <>
-     <h1>react page</h1>
      <HomePage/>
              
     </>
