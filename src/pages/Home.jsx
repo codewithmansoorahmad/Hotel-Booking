@@ -6,7 +6,7 @@ export default function HomePage(){
 return <header className="Header">
     <div className="logo">
         <House size={30} strokeWidth={1}/>
-        <span>StayFinder</span>
+        <span className="project-name">StayFinder</span>
     </div>
 <NavBar/>
 </header>
