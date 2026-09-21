@@ -5,7 +5,7 @@
     width: 100%;
     background-size: cover;
     background-position: center center;
-    min-height: 400px;
+    min-height: 300px;
 }
 .hero-info{
     max-width: 400px;
@@ -24,14 +24,15 @@
 
 }
 .hero-info button{
-    /* padding: 8px; */
-    background-color: rgb(32, 160, 199);
+    background-color: rgb(56, 128, 209);
     color: white;
     border-radius: 10px;
-    width: 120px;
+    width: 150px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
+    cursor: pointer;
+    font-size: 12px;
 }
