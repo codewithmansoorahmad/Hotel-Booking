@@ -9,6 +9,7 @@ export default function NavBar(){
 <li><NavLink className="link">Destinations</NavLink></li>
 <li><NavLink className="link-favorite"><Heart size={20}/> <span>favorites</span></NavLink></li>
 
+
         </ul>
     </nav>
 }

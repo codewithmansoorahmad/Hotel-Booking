@@ -1,4 +1,4 @@
-import {  House } from "lucide-react"
+import {  House, Menu } from "lucide-react"
 import NavBar from "../components/NavBar"
 
 import "../css/Header.css"
@@ -9,5 +9,8 @@ return <header className="Header">
         <span className="project-name">StayFinder</span>
     </div>
 <NavBar/>
+<>
+    <Menu className="menu"/>
+    </>
 </header>
 }
