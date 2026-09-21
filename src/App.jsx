@@ -1,11 +1,13 @@
-import HomePage from "./pages/Home"
 
 import "./css/App.css"
+import Header from "./pages/Header"
+import Home from "./pages/Home"
 function App() {
 
   return (
     <>
-     <HomePage/>
+     <Header/>
+     <Home/>
              
     </>
   )

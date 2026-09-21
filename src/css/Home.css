@@ -1,0 +1,9 @@
+
+
+.home-hero{
+    background-image: url("../assets/hotel.avif");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+}

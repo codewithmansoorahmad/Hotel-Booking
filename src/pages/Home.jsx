@@ -1,13 +1,8 @@
-import {  House } from "lucide-react"
-import NavBar from "../components/NavBar"
+import HomeHero from "../components/HomeHero"
+import "../css/Home.css"
+export default function Home(){
+    return <div className="home-page">
+        <HomeHero/>
 
-import "../css/Header.css"
-export default function HomePage(){
-return <header className="Header">
-    <div className="logo">
-        <House size={30} strokeWidth={1}/>
-        <span className="project-name">StayFinder</span>
     </div>
-<NavBar/>
-</header>
 }
