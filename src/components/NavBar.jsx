@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
 import { Heart } from "lucide-react"
-export default function NavBar(){
+export default function NavBar({isIcon,setIsIcon}){
     return <nav className="nav-bar">
-        <ul>
+        <ul className="ul-list">
 <li><NavLink className="link">Home</NavLink></li>
 <li><NavLink className="link">About</NavLink></li>
 <li><NavLink className="link">Hotels</NavLink></li>
