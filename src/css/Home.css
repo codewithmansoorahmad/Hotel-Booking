@@ -7,3 +7,31 @@
     background-position: center center;
     min-height: 400px;
 }
+.hero-info{
+    max-width: 400px;
+    padding: 50px 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.hero-info h1{
+    font-size: 20px;
+}
+.hero-info h2{
+    font-size: 34px;
+    font-weight: 800;
+
+}
+.hero-info button{
+    /* padding: 8px; */
+    background-color: rgb(32, 160, 199);
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
