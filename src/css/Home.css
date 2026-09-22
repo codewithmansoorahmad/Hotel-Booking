@@ -1,11 +1,11 @@
 
 
 .home-hero{
-    background-image: url("../assets/hotel.avif");
+    background-image: url("../assets/hotel5.jpg");
     width: 100%;
     background-size: cover;
     background-position: center center;
-    max-height: 300px;
+    height: 300px;
 }
 .hero-info{
     max-width: 400px;
