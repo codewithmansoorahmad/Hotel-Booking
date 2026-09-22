@@ -8,31 +8,31 @@ export const popularDestinations=[
     {
         name:"Swat",
         province:"khyberPakhtunkwa",
-        imageg:swatValley,
+        image:swatValley,
     },
     {
         name:"Peshawar",
         province:"khyberPakhtunkwa",
-        imageg:peshawar,
+        image:peshawar,
     },
     {
         name:"Islamabad",
         province:"Islamabad",
-        imageg:islamabad,
+        image:islamabad,
     },
     {
         name:"Lahore",
         province:"Punjab",
-        imageg:lahore,
+        image:lahore,
     },
     {
         name:"karachi",
         province:"Sindh",
-        imageg:karachi,
+        image:karachi,
     },
     {
         name:"Hunza",
         province:"Gilgit",
-        imageg:hunza,
+        image:hunza,
     },
 ]
