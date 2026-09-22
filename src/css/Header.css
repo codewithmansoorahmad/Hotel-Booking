@@ -43,7 +43,9 @@
 .menu{
     display: none;
 }
-
+.active{
+    font-weight: 800;
+}
 
 @media (max-width:570px) {
     .Header{

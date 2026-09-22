@@ -1,7 +1,9 @@
 import { ArrowRight, MapPin } from "lucide-react"
 import { popularDestinations } from "../JS service/DestinationsCode"
+import { useNavigate } from "react-router-dom"
 
 export default function HomePopularDestinations(){
+    const navigate =useNavigate()
     let destiations=popularDestinations
     return <div className="home-destinations">
         <div className="popular-info">
@@ -11,7 +13,7 @@ export default function HomePopularDestinations(){
             <p>Discover amazing places and find perfect stay.</p>
 </div>
 <div>
-<button>View All destinations <ArrowRight/></button>
+<button onClick={()=>navigate("/destinations")}>View All destinations <ArrowRight/></button>
 </div>
         </div>
 
