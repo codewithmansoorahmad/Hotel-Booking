@@ -8,8 +8,6 @@ export default function NavBar({isIcon,setIsIcon}){
 <li className="li"><NavLink onClick={()=>setIsIcon(true)} to="/hotels" className="link">Hotels</NavLink></li>
 <li className="li"><NavLink onClick={()=>setIsIcon(true)} to="/destinations" className="link">Destinations</NavLink></li>
 <li className="li"><NavLink onClick={()=>setIsIcon(true)} to="/favorites" className="link-favorite"><Heart size={20}/> <span>favorites</span></NavLink></li>
-
-
         </ul>
     </nav>
 }

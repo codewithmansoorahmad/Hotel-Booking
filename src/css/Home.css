@@ -5,7 +5,7 @@
     width: 100%;
     background-size: cover;
     background-position: center center;
-    min-height: 300px;
+    max-height: 300px;
 }
 .hero-info{
     max-width: 400px;
@@ -35,4 +35,38 @@
     border: none;
     cursor: pointer;
     font-size: 12px;
+}
+@media (max-width:500px) {
+    .hero-info{
+        padding: 30px;
+    }
+    .hero-info h1{
+    font-size: 18px;
+}
+.hero-info h2{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+}
+@media (max-width:320px) {
+    .hero-info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .home-hero{
+height: 250px;
+
+
+    }
+    .hero-info h1{
+    font-size: 16px;
+}
+.hero-info h2{
+    font-size: 30px;
+    font-weight: 700;
+
+}
 }
