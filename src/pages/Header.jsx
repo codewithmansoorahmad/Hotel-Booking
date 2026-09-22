@@ -11,8 +11,8 @@ return <header className="Header">
         <span className="project-name">StayFinder</span>
     </div>
 <NavBar isIcon={isIcon} setIsIcon={setIsIcon} />
-<>
+<div className="menu">
     <button className="menu-open" onClick={()=>setIsIcon(!isIcon)}>{isIcon?<Menu />:<X/>}</button>
-    </>
+    </div>
 </header>
 }
