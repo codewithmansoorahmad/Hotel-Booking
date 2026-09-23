@@ -5,22 +5,22 @@ export default function AboutStay(){
         <h1>Your stay made simple</h1>
         <div className="stays-grid">
             <div className="about-hotels">
-                <Hotel/>
+                <Hotel size={20} className="icon"/>
                 <h2>Find Hotels</h2>
                 <p>Browse Hotels for your next trip</p>
             </div>
             <div className="about-destiantion">
-                <MapPin/>
+                <MapPin size={20} className="icon"/>
                 <h2>Discover Places</h2>
                 <p>Explain popular destination across pakistan</p>
             </div>
             <div className="about-favorite">
-                <Heart/>
+                <Heart size={20} className="icon"/>
                 <h2>Save Favorites</h2>
                 <p>Keep your favorite stays in one Place</p>
             </div>
-            
         </div>
+
 
     </div>
 }
