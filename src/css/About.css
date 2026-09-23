@@ -38,6 +38,10 @@
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
 }
 
 .about-hero button:hover {

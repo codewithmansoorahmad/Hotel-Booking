@@ -1,75 +1,102 @@
 
 
-.home-hero{
-    background-image: url("../assets/hotel5.jpg");
+.home-hero {
+    min-height: 70vh;
     width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../assets/hotel4.avif");
     background-size: cover;
-    background-position: center center;
-    height: 300px;
-}
-.hero-info{
-    max-width: 400px;
-    padding: 50px 70px;
-    color: white;
+    background-position: center;
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-.hero-info h1{
-    font-size: 20px;
-}
-.hero-info h2{
-    font-size: 34px;
-    font-weight: 800;
-
-}
-.hero-info button{
-    background-color: rgb(56, 128, 209);
-    color: white;
-    border-radius: 10px;
-    width: 150px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border: none;
-    cursor: pointer;
-    font-size: 12px;
+    padding: 60px 8%;
+    box-sizing: border-box;
 }
-@media (max-width:500px) {
-    .hero-info{
-        padding: 30px;
-    }
-    .hero-info h1{
+
+.hero-info {
+    max-width: 550px;
+    color: white;
+}
+
+.hero-info h1 {
+    margin: 0 0 10px;
+    font-family: "Mulish", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hero-info h2 {
+    margin: 0 0 15px;
+    font-family: "Mulish", sans-serif;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-info p {
+    margin: 0;
+    max-width: 480px;
+    font-family: "Mulish", sans-serif;
     font-size: 18px;
+    line-height: 1.6;
 }
-.hero-info h2{
-    font-size: 30px;
-    font-weight: 700;
 
-}
-}
-@media (max-width:320px) {
-    .hero-info{
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-
-    }
-    .home-hero{
-height: 250px;
-
-
-    }
-    .hero-info h1{
+.hero-info button {
+    margin-top: 28px;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Mulish", sans-serif;
     font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
-.hero-info h2{
-    font-size: 30px;
-    font-weight: 700;
 
+.hero-info button:hover {
+    transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+    .home-hero {
+        min-height: 450px;
+        padding: 50px 25px;
+        background-position: center;
+    }
+
+    .hero-info h1 {
+        font-size: 20px;
+    }
+
+    .hero-info h2 {
+        font-size: 36px;
+    }
+
+    .hero-info p {
+        font-size: 16px;
+    }
 }
+
+@media (max-width: 480px) {
+    .home-hero {
+        min-height: 420px;
+    }
+
+    .hero-info h2 {
+        font-size: 30px;
+    }
+
+    .hero-info p {
+        font-size: 15px;
+    }
+}
+
 
 .home-destinations {
     width: 90%;

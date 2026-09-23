@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 
 export default function AboutHero(){
@@ -7,6 +8,6 @@ export default function AboutHero(){
         <p>Find a stay that feels like home.</p>
         <p>Discover hotels and destinations across pakistan in ease.</p>
 <p>Your journey to perfect stay.</p>
-        <button onClick={()=>navigate("/hotels")}>Explore Hotels</button>
+        <button onClick={()=>navigate("/hotels")}>Explore Hotels <ArrowRight size={20}/></button>
     </div>
 }
