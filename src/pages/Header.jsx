@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar"
 import "../css/Header.css"
 import { useState } from "react"
 import { Outlet } from "react-router-dom"
+import Footer from "./Footer"
 export default function Header(){
     const [isIcon,setIsIcon]=useState(true)
 return <>
@@ -20,6 +21,7 @@ return <>
 
 </header>
     <Outlet/>
+    <Footer/>
 
 </>
 }

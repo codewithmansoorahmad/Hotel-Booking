@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import { Routes,Route } from "react-router-dom"
 import Hotels from "./pages/Hotels"
 import Favorites from "./pages/Favorites"
+import Footer from "./pages/Footer"
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
      </Route>
      </Routes>  
     </>
+
   )
 }
 

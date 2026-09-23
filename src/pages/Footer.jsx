@@ -1,8 +1,9 @@
 import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
+import "../css/Footer.css"
 
 export default function Footer(){
-    <div className="footer">
+   return <div className="footer">
         <div className="stay-finder">
           
             <h1><Home className="home-icon"/>StayFinder</h1>
@@ -10,11 +11,11 @@ export default function Footer(){
         </div>
         <div className="quickLinks">
             <ul className="links-ul">
-                <Link className="link">Home</Link>
-                <Link className="link">About</Link>
-                <Link className="link">Hotels</Link>
-                <Link className="link">Destinations</Link>
-                <Link className="link">Favorites</Link>
+                <Link className="quick-link">Home</Link>
+                <Link className="quick-link">About</Link>
+                <Link className="quick-link">Hotels</Link>
+                <Link className="quick-link">Destinations</Link>
+                <Link className="quick-link">Favorites</Link>
             </ul>
         </div>
         <div className="footer-footer">
