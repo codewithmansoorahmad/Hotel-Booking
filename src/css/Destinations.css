@@ -1,0 +1,113 @@
+.destinations-hero {
+    width: 100%;
+    height: 300px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/hotel8.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desti-hero-info {
+    width: 500px;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.desti-hero-info h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.desti-hero-info h2 {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.desti-hero-info p {
+    margin: 0;
+    max-width: 480px;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.desti-hero-info button {
+    margin-top: 10px;
+    padding: 11px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* width: 160px; */
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #222;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.desti-hero-info button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .destinations-hero {
+        height: 320px;
+        padding: 25px 20px;
+    }
+
+    .desti-hero-info {
+        width: 100%;
+    }
+
+    .desti-hero-info h1 {
+        font-size: 30px;
+    }
+
+    .desti-hero-info h2 {
+        font-size: 20px;
+    }
+
+    .desti-hero-info p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinations-hero {
+        height: 350px;
+    }
+
+    .desti-hero-info h1 {
+        font-size: 27px;
+    }
+
+    .desti-hero-info h2 {
+        font-size: 18px;
+    }
+
+    .desti-hero-info p {
+        font-size: 14px;
+    }
+}

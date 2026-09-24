@@ -1,5 +1,7 @@
+import DestinationsHero from "../components/DestinationsHero";
+import "../css/Destinations.css"
 export default function Destinations(){
  return   <div className="destinations">
-        <h1>destination</h1>
+    <DestinationsHero/>
     </div>
 }
