@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import DestinationsAll from "./DestinationsAll";
 
 export default function DestinationsMain({selectVal,setSelectVal,destinations,setDestinations}){
