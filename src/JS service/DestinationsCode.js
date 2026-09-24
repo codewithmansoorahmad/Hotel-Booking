@@ -29,7 +29,7 @@ export const popularDestinations=[
     },
     {
         name:"Islamabad",
-        province:"punjab",
+        province:"Punjab",
         image:islamabad,
         id:3
     },
@@ -61,13 +61,13 @@ export const popularDestinations=[
 export const allDestinations=[
        {
         name:"Swat",
-        province:"khyberPakhtunkwa",
+        province:"khyberPakhtunkhwa",
         image:swatValley,
         id:1
     },
     {
         name:"Peshawar",
-        province:"khyberPakhtunkwa",
+        province:"khyberPakhtunkhwa",
         image:peshawar,
         id:2
     },
@@ -95,74 +95,74 @@ export const allDestinations=[
         name:"Hunza",
         province:"Gilgit",
         image:hunza,
-        id:5
+        id:6
 
     },
     {
         name:"Hunza",
         province:"Gilgit",
         image:hunza,
-        id:5
+        id:7
 
     },
     {
     name: "Abbottabad",
     province: "khyberPakhtunkhwa",
     image: abbotatbad,
-    id: 7
+    id: 8
 },
 {
     name: "Chitral",
     province: "khyberPakhtunkhwa",
     image: chitral,
-    id: 8
+    id: 9
 },
 {
     name: "Dir",
     province: "khyberPakhtunkhwa",
     image: dir,
-    id: 9
-},
-{
-    name: "Faisalabad",
-    province: "punjab",
-    image: faisalabad,
     id: 10
 },
 {
-    name: "Multan",
-    province: "punjab",
-    image: multan,
+    name: "Faisalabad",
+    province: "Punjab",
+    image: faisalabad,
     id: 11
+},
+{
+    name: "Multan",
+    province: "Punjab",
+    image: multan,
+    id: 12
 },
 {
     name: "Naran",
     province: "khyberPakhtunkhwa",
     image: naran,
-    id: 12
+    id: 13
 },
 {
     name: "Nathia Gali",
     province: "khyberPakhtunkhwa",
     image: nathiaGali,
-    id: 13
-},
-{
-    name: "Quetta",
-    province: "balochistan",
-    image: quetta,
     id: 14
 },
 {
-    name: "Rawalpindi",
-    province: "punjab",
-    image: rawalpindi,
+    name: "Quetta",
+    province: "Balochistan",
+    image: quetta,
     id: 15
 },
 {
-    name: "Skardu",
-    province: "gilgitBaltistan",
-    image: skardu,
+    name: "Rawalpindi",
+    province: "Punjab",
+    image: rawalpindi,
     id: 16
+},
+{
+    name: "Skardu",
+    province: "Gilgit",
+    image: skardu,
+    id: 17
 }
 ]
