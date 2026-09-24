@@ -1,5 +1,7 @@
-export default function DestinationsMain(){
-    <div className="main-destinations">
+import DestinationsAll from "./DestinationsAll";
+
+export default function DestinationsMain({selectVal,setSelectVal,destinations,setDestinations}){
+    return <div className="main-destinations">
         <h1>-----------Explore Destinations------------</h1>
         <p>Select Destinations and get hotels</p>
         <label htmlFor="select">Choose Province</label>
@@ -11,6 +13,9 @@ export default function DestinationsMain(){
             <option value="Balochistan">Balochistan</option>
             <option value="Gilgit">Gilgit</option>
         </select>
+
+
+        <DestinationsAll destinations={destinations}/>
 
     </div>
 }
