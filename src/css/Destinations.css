@@ -111,3 +111,148 @@
         font-size: 14px;
     }
 }
+
+.main-destinations {
+    width: 100%;
+    padding: 60px 7%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main-destinations > h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.main-destinations > p {
+    margin: 10px 0 35px;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+.main-destinations label {
+    margin-right: 12px;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.main-destinations select {
+    width: 220px;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+    background-color: white;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-destinations select:focus {
+    border-color: #888;
+}
+
+.destinations-grid {
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destiantion {
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.destiantion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.destiantion img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+}
+
+.destiantion h1 {
+    margin: 15px 18px 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #222;
+}
+
+.destiantion p {
+    margin: 0 18px 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+.destiantion p svg {
+    width: 17px;
+    height: 17px;
+}
+
+@media (max-width: 900px) {
+    .main-destinations {
+        padding: 50px 5%;
+    }
+
+    .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-destinations {
+        padding: 45px 20px;
+    }
+
+    .main-destinations > h1 {
+        font-size: 27px;
+    }
+
+    .main-destinations > p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .main-destinations label {
+        display: block;
+        margin: 0 0 8px;
+    }
+
+    .main-destinations select {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+    }
+
+    .destiantion img {
+        height: 230px;
+    }
+}
