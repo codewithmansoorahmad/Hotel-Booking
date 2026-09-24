@@ -29,7 +29,7 @@ export const popularDestinations=[
     },
     {
         name:"Islamabad",
-        province:"Islamabad",
+        province:"punjab",
         image:islamabad,
         id:3
     },
@@ -73,7 +73,7 @@ export const allDestinations=[
     },
     {
         name:"Islamabad",
-        province:"Islamabad",
+        province:"Punjab",
         image:islamabad,
         id:3
     },
