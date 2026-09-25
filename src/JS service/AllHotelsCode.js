@@ -600,4 +600,151 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+  id: 13,
+  name: "Best Western Quetta",
+  destination: "Quetta",
+  province: "balochistan",
+  rating: 4.3,
+  reviews: 80,
+  image: "/Hotels/QuettaHotels/BestWesternQuetta/hotel1.webp",
+  images: [
+    "/Hotels/QuettaHotels/BestWesternQuetta/hotel1.webp",
+    "/Hotels/QuettaHotels/BestWesternQuetta/hotel2.webp",
+    "/Hotels/QuettaHotels/BestWesternQuetta/hotel3.webp"
+  ],
+  location: "Hanna Mall 1, DHA, Quetta",
+  description: "Best Western Quetta offers modern accommodation in DHA Quetta with comfortable rooms, dining facilities and contemporary amenities for business and leisure travelers.",
+  price: 16000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard King Room", price: 16000, guests: 2, beds: 1 },
+    { name: "Standard Twin Room", price: 16000, guests: 2, beds: 2 },
+    { name: "Deluxe Room", price: 20000, guests: 3, beds: 1 },
+    { name: "Executive Suite", price: 28000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Fitness Center",
+    "Tea/Coffee Maker",
+    "Conference Facilities"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Concierge",
+    "Parking",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 14,
+  name: "Grand Hotel Quetta",
+  destination: "Quetta",
+  province: "balochistan",
+  rating: 4.5,
+  reviews: 400,
+  image: "/Hotels/QuettaHotels/GrandHotelQuetta/hotel1.webp",
+  images: [
+    "/Hotels/QuettaHotels/GrandHotelQuetta/hotel1.webp",
+    "/Hotels/QuettaHotels/GrandHotelQuetta/hotel2.webp",
+    "/Hotels/QuettaHotels/GrandHotelQuetta/hotel3.webp"
+  ],
+  location: "Moti Ram Road, Quetta",
+  description: "Grand Hotel Quetta offers modern rooms in central Quetta with air conditioning, WiFi, restaurant facilities, complimentary breakfast and free parking.",
+  price: 7500,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Deluxe Queen Room", price: 7500, guests: 2, beds: 1 },
+    { name: "Deluxe King Room", price: 8500, guests: 2, beds: 1 },
+    { name: "Deluxe Twin Room", price: 9000, guests: 2, beds: 2 },
+    { name: "Deluxe Triple Room", price: 11000, guests: 3, beds: 3 },
+    { name: "Family Room", price: 14000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "City View",
+    "Family Rooms"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Car Rental",
+    "Tour Desk"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 15,
+  name: "Metro Hotel Quetta",
+  destination: "Quetta",
+  province: "balochistan",
+  rating: 4.4,
+  reviews: 794,
+  image: "/Hotels/QuettaHotels/MetroHotelQuetta/hotel1.webp",
+  images: [
+    "/Hotels/QuettaHotels/MetroHotelQuetta/hotel1.webp",
+    "/Hotels/QuettaHotels/MetroHotelQuetta/hotel2.webp",
+    "/Hotels/QuettaHotels/MetroHotelQuetta/hotel3.webp"
+  ],
+  location: "Gurdat Singh Road, Quetta",
+  description: "Metro Hotel Quetta provides convenient accommodation in central Quetta with air-conditioned rooms and a 24-hour front desk.",
+  price: 6500,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Single Room", price: 6500, guests: 1, beds: 1 },
+    { name: "Standard Double Room", price: 8000, guests: 2, beds: 1 },
+    { name: "Twin Room", price: 8500, guests: 2, beds: 2 },
+    { name: "Family Room", price: 11000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Free WiFi",
+    "Parking",
+    "Restaurant",
+    "Room Service",
+    "City View"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Luggage Storage"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
