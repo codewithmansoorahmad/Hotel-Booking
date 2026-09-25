@@ -1048,5 +1048,153 @@ export const hotels = [
   checkOut: "12:00 PM",
   isBooked: false,
   available: true
-},git ad
+},
+{
+  id: 22,
+  name: "Jovial Gold Hotel Naran",
+  destination: "Naran",
+  province: "khyberPakhtunkhwa",
+  rating: 4.5,
+  reviews: 693,
+  image: "/Hotels/NaranHotels/JovialGoldHotelNaran/hotel1.webp",
+  images: [
+    "/Hotels/NaranHotels/JovialGoldHotelNaran/hotel1.webp",
+    "/Hotels/NaranHotels/JovialGoldHotelNaran/hotel2.webp",
+    "/Hotels/NaranHotels/JovialGoldHotelNaran/hotel3.webp"
+  ],
+  location: "Naran Bypass Road, Naran",
+  description: "Jovial Gold Hotel Naran offers comfortable accommodation near Naran Bazar with family rooms, an on-site restaurant and café, free WiFi and parking.",
+  price: 16000,
+  maxGuests: 5,
+  roomTypes: [
+    { name: "Deluxe Master Bedroom", price: 16000, guests: 2, beds: 1 },
+    { name: "Master Bedroom - Single", price: 22000, guests: 3, beds: 2 },
+    { name: "Family Deluxe Room", price: 25000, guests: 4, beds: 2 },
+    { name: "Family Executive Room", price: 35000, guests: 5, beds: 3 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Hot Water",
+    "Private Bathroom",
+    "TV",
+    "Mountain View",
+    "Restaurant",
+    "Cafe",
+    "Parking",
+    "Generator Backup"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Breakfast",
+    "Parking",
+    "Laundry",
+    "Tour Assistance",
+    "BBQ",
+    "Bonfire"
+  ],
+  checkIn: "12:00 PM",
+  checkOut: "11:00 AM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 23,
+  name: "Rose Valley Hotel Naran",
+  destination: "Naran",
+  province: "khyberPakhtunkhwa",
+  rating: 4.0,
+  reviews: 686,
+  image: "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel1.webp",
+  images: [
+    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel1.webp",
+    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel2.webp",
+    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel3.webp"
+  ],
+  location: "Jheel Saif ul Malook Road, Katha, Naran",
+  description: "Rose Valley Hotel Naran provides comfortable accommodation in the Katha area of Naran with convenient access to the valley's scenic attractions.",
+  price: 9000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Room", price: 9000, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 12000, guests: 2, beds: 1 },
+    { name: "Family Room", price: 15000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Private Bathroom",
+    "TV",
+    "Mountain View",
+    "Restaurant",
+    "Parking",
+    "Balcony"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Breakfast",
+    "Parking",
+    "Laundry",
+    "Tour Assistance"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 24,
+  name: "The Sarai Hotel & Resort Naran",
+  destination: "Naran",
+  province: "khyberPakhtunkhwa",
+  rating: 4.6,
+  reviews: 749,
+  image: "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel1.webp",
+  images: [
+    "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel1.webp",
+    "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel2.webp",
+    "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel3.webp"
+  ],
+  location: "Saiful Muluk Road, Katha, Naran",
+  description: "The Sarai Hotel & Resort Naran offers comfortable resort accommodation in Katha with mountain surroundings, dining facilities and convenient access to Naran's attractions.",
+  price: 13000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Deluxe Room", price: 13000, guests: 2, beds: 1 },
+    { name: "Premium Room", price: 16000, guests: 2, beds: 1 },
+    { name: "Family Room", price: 20000, guests: 4, beds: 2 },
+    { name: "Family Suite", price: 25000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Hot Water",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Mountain View",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Garden",
+    "Balcony"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Breakfast",
+    "Parking",
+    "Laundry",
+    "Tour Assistance",
+    "Outdoor Activities"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
