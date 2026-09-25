@@ -747,4 +747,201 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+  id: 16,
+  name: "Shelton's Rezidor",
+  destination: "Peshawar",
+  province: "khyberPakhtunkhwa",
+  rating: 4.1,
+  reviews: 4022,
+  image: "/Hotels/PeshawarHotels/SheltonsRezidor/hotel1.webp",
+  images: [
+    "/Hotels/PeshawarHotels/SheltonsRezidor/hotel1.webp",
+    "/Hotels/PeshawarHotels/SheltonsRezidor/hotel2.webp",
+    "/Hotels/PeshawarHotels/SheltonsRezidor/hotel3.webp",
+    "/Hotels/PeshawarHotels/SheltonsRezidor/hotel4.webp"
+  ],
+  location: "Main University Road, Tehkal, Peshawar",
+  description: "Shelton's Rezidor is located on Main University Road in Tehkal and offers comfortable rooms, dining facilities, free WiFi, parking and convenient access to central Peshawar.",
+  price: 15000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Single Standard Room", price: 15000, guests: 1, beds: 1 },
+    { name: "Double Standard Room", price: 16000, guests: 2, beds: 1 },
+    { name: "Double Executive Room", price: 18000, guests: 2, beds: 1 },
+    { name: "Quad Room", price: 20000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Terrace",
+    "Minibar"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Airport Shuttle",
+    "Luggage Storage"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 17,
+  name: "Peshawar Serena Hotel",
+  destination: "Peshawar",
+  province: "khyberPakhtunkhwa",
+  rating: 4.3,
+  reviews: 7933,
+  image: "/Hotels/PeshawarHotels/PeshawarSerenaHotel/hotel1.webp",
+  images: [
+    "/Hotels/PeshawarHotels/PeshawarSerenaHotel/hotel1.webp",
+    "/Hotels/PeshawarHotels/PeshawarSerenaHotel/hotel2.webp",
+    "/Hotels/PeshawarHotels/PeshawarSerenaHotel/hotel3.webp"
+  ],
+  location: "Khyber Road, Peshawar Golf Club, Peshawar",
+  description: "Peshawar Serena Hotel is a luxury hotel overlooking the Peshawar Golf Course and offering elegant rooms, restaurants, recreational facilities and modern services.",
+  price: 30000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Deluxe Room", price: 30000, guests: 2, beds: 1 },
+    { name: "Deluxe Twin Room", price: 30000, guests: 2, beds: 2 },
+    { name: "Executive Room", price: 38000, guests: 2, beds: 1 },
+    { name: "Executive Suite", price: 50000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Swimming Pool",
+    "Fitness Center",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Garden",
+    "Golf Course",
+    "Tea/Coffee Maker"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Spa Services",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 18,
+  name: "Hotel Grand",
+  destination: "Peshawar",
+  province: "khyberPakhtunkhwa",
+  rating: 4.0,
+  reviews: 1430,
+  image: "/Hotels/PeshawarHotels/HotelGrand/hotel1.webp",
+  images: [
+    "/Hotels/PeshawarHotels/HotelGrand/hotel1.webp",
+    "/Hotels/PeshawarHotels/HotelGrand/hotel2.webp",
+    "/Hotels/PeshawarHotels/HotelGrand/hotel3.webp"
+  ],
+  location: "University Road, Tehkal, Peshawar",
+  description: "Hotel Grand Peshawar offers comfortable accommodation on University Road with air-conditioned rooms, dining facilities, WiFi and parking.",
+  price: 9000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Single Room", price: 9000, guests: 1, beds: 1 },
+    { name: "Standard Double Room", price: 10500, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 13000, guests: 2, beds: 1 },
+    { name: "Family Room", price: 16000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "City View"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Luggage Storage"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 19,
+  name: "Continental Hotel Peshawar",
+  destination: "Peshawar",
+  province: "khyberPakhtunkhwa",
+  rating: 4.1,
+  reviews: 2326,
+  image: "/Hotels/PeshawarHotels/ContinentalHotelPeshawar/hotel1.webp",
+  images: [
+    "/Hotels/PeshawarHotels/ContinentalHotelPeshawar/hotel1.webp",
+    "/Hotels/PeshawarHotels/ContinentalHotelPeshawar/hotel2.webp",
+    "/Hotels/PeshawarHotels/ContinentalHotelPeshawar/hotel3.webp"
+  ],
+  location: "Firdous Chowk, Shahi Bagh, Peshawar",
+  description: "Continental Hotel Peshawar offers convenient accommodation near Shahi Bagh with comfortable rooms, dining facilities, parking and essential hotel services.",
+  price: 8500,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Single Room", price: 8500, guests: 1, beds: 1 },
+    { name: "Standard Double Room", price: 10000, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 12500, guests: 2, beds: 1 },
+    { name: "Family Room", price: 15000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "City View"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Luggage Storage"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
