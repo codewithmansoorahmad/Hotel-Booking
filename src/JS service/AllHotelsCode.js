@@ -248,5 +248,207 @@ export const hotels = [
     checkOut: "12:00 PM",
     isBooked: false,
     available: true
-  }
+  },
+  {
+  id: 6,
+  name: "Hotel Reego Skardu",
+  destination: "Skardu",
+  province: "gilgitBaltistan",
+  rating: 4.5,
+  reviews: 396,
+  image: "/Hotels/SkarduHotels/HotelReegoSkardu/hotel1.webp",
+  images: [
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel1.webp",
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel2.webp",
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel3.webp",
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel4.webp"
+  ],
+  location: "Alamdar Road, Kargrong, Skardu",
+  description: "Hotel Reego Skardu offers comfortable accommodation with mountain and garden views, a restaurant, family rooms and modern facilities.",
+  price: 11000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Deluxe Room", price: 11000, guests: 3, beds: 1 },
+    { name: "Deluxe Room", price: 13000, guests: 3, beds: 1 },
+    { name: "Executive Room", price: 17000, guests: 3, beds: 1 },
+    { name: "Quadruple Room", price: 17000, guests: 4, beds: 3 },
+    { name: "Family Suite", price: 25000, guests: 4, beds: 3 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Mountain View",
+    "Garden View",
+    "Private Bathroom",
+    "TV",
+    "Restaurant",
+    "Parking",
+    "Terrace",
+    "Garden"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Concierge",
+    "Private Check-in",
+    "Walking Tours"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 7,
+  name: "Montagna Pods",
+  destination: "Skardu",
+  province: "gilgitBaltistan",
+  rating: 4.8,
+  reviews: 177,
+  image: "/Hotels/SkarduHotels/MontagnaPods/hotel1.webp",
+  images: [
+    "/Hotels/SkarduHotels/MontagnaPods/hotel1.webp",
+    "/Hotels/SkarduHotels/MontagnaPods/hotel2.webp",
+    "/Hotels/SkarduHotels/MontagnaPods/hotel3.webp"
+  ],
+  location: "Katpana, Skardu",
+  description: "Montagna Pods is a distinctive accommodation in the Katpana area of Skardu, offering pod-style stays surrounded by the mountain landscape.",
+  price: 12000,
+  maxGuests: 2,
+  roomTypes: [
+    { name: "Mountain Pod", price: 12000, guests: 2, beds: 1 },
+    { name: "Deluxe Pod", price: 15000, guests: 2, beds: 1 },
+    { name: "Premium Pod", price: 18000, guests: 2, beds: 1 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Mountain View",
+    "Parking",
+    "Restaurant",
+    "Terrace",
+    "Garden"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Breakfast",
+    "Parking",
+    "Outdoor Activities"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 8,
+  name: "PC Legacy Skardu",
+  destination: "Skardu",
+  province: "gilgitBaltistan",
+  rating: 4.5,
+  reviews: 249,
+  image: "/Hotels/SkarduHotels/PCLegacySkardu/hotel1.webp",
+  images: [
+    "/Hotels/SkarduHotels/PCLegacySkardu/hotel1.webp",
+    "/Hotels/SkarduHotels/PCLegacySkardu/hotel2.webp",
+    "/Hotels/SkarduHotels/PCLegacySkardu/hotel3.webp",
+    "/Hotels/SkarduHotels/PCLegacySkardu/hotel4.webp"
+  ],
+  location: "Airport Road, Gamba, Skardu",
+  description: "PC Legacy Skardu offers modern accommodation with mountain views, dining facilities, fitness facilities and convenient access to Skardu Airport.",
+  price: 20000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard King Room", price: 20000, guests: 2, beds: 1 },
+    { name: "Standard Twin Room", price: 20000, guests: 2, beds: 2 },
+    { name: "Deluxe Room", price: 24000, guests: 3, beds: 1 },
+    { name: "Executive Studio Suite", price: 30000, guests: 3, beds: 1 },
+    { name: "Luxury Chalet", price: 35000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Mountain View",
+    "Tea/Coffee Maker",
+    "Fitness Center",
+    "Restaurant",
+    "Parking",
+    "Garden",
+    "Terrace"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Fitness Center",
+    "Concierge"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 9,
+  name: "Shangrila Resort Skardu",
+  destination: "Skardu",
+  province: "gilgitBaltistan",
+  rating: 4.4,
+  reviews: 7342,
+  image: "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel1.webp",
+  images: [
+    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel1.webp",
+    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel2.webp",
+    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel3.webp",
+    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel4.webp"
+  ],
+  location: "Kachura, Skardu",
+  description: "Shangrila Resort Skardu is a lakeside mountain resort offering chalets, villas and suites surrounded by the natural scenery of Lower Kachura Lake.",
+  price: 22000,
+  maxGuests: 6,
+  roomTypes: [
+    { name: "Executive Suite", price: 22000, guests: 2, beds: 1 },
+    { name: "Swiss Cottage", price: 28000, guests: 4, beds: 2 },
+    { name: "Swiss Villa", price: 35000, guests: 4, beds: 2 },
+    { name: "2 Bedroom Executive Suite", price: 40000, guests: 4, beds: 2 },
+    { name: "3 Bedroom Executive Suite", price: 55000, guests: 6, beds: 3 },
+    { name: "Shangrila Chalet", price: 55000, guests: 6, beds: 3 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Mountain View",
+    "Lake View",
+    "Private Bathroom",
+    "Restaurant",
+    "Parking",
+    "Garden",
+    "Terrace",
+    "Room Service"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Lake Activities",
+    "Outdoor Activities",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
