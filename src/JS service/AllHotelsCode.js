@@ -451,4 +451,153 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+  id: 10,
+  name: "Grace Crown Hotel",
+  destination: "Rawalpindi",
+  province: "punjab",
+  rating: 4.4,
+  reviews: 5222,
+  image: "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel1.webp",
+  images: [
+    "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel1.webp",
+    "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel2.webp"
+  ],
+  location: "Committee Chowk, Murree Road, Rawalpindi",
+  description: "Grace Crown Hotel offers comfortable accommodation in Rawalpindi with well-appointed rooms, dining facilities and spaces for meetings and events.",
+  price: 8000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Single Room", price: 8000, guests: 1, beds: 1 },
+    { name: "Double Room", price: 10000, guests: 2, beds: 1 },
+    { name: "Twin Room", price: 11000, guests: 2, beds: 2 },
+    { name: "Deluxe Room", price: 14000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Parking",
+    "Restaurant",
+    "Room Service",
+    "Conference Facilities"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 11,
+  name: "Pearl-Continental Hotel Rawalpindi",
+  destination: "Rawalpindi",
+  province: "punjab",
+  rating: 4.3,
+  reviews: 20802,
+  image: "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel1.webp",
+  images: [
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel1.webp",
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel2.webp",
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel3.webp",
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel4.webp"
+  ],
+  location: "The Mall Road, Rawalpindi",
+  description: "Pearl-Continental Hotel Rawalpindi is a luxury five-star hotel offering elegant rooms and suites, multiple restaurants, swimming pools, spa facilities and a fitness centre.",
+  price: 28000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Executive Queen", price: 28000, guests: 2, beds: 1 },
+    { name: "Executive Twin", price: 28000, guests: 2, beds: 2 },
+    { name: "Executive Suite", price: 40000, guests: 3, beds: 1 },
+    { name: "Royal Suite", price: 60000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Swimming Pool",
+    "Fitness Center",
+    "Spa",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Coffee Shop",
+    "Garden"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Spa Services",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 12,
+  name: "Royalton Hotel - Rawalpindi",
+  destination: "Rawalpindi",
+  province: "punjab",
+  rating: 3.9,
+  reviews: 1695,
+  image: "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel1.webp",
+  images: [
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel1.webp",
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel2.webp",
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel3.webp",
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel4.webp"
+  ],
+  location: "Liaqat Road, Opposite Liaquat Bagh, Rawalpindi",
+  description: "Royalton Hotel Rawalpindi offers comfortable rooms with modern facilities, free WiFi, dining, parking and convenient access to central Rawalpindi.",
+  price: 7500,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Single Room", price: 7500, guests: 1, beds: 1 },
+    { name: "Standard Twin Room", price: 9000, guests: 2, beds: 2 },
+    { name: "Standard Family Room", price: 11000, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 14000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Parking",
+    "Restaurant",
+    "Room Service",
+    "Terrace",
+    "City View"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Security"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
