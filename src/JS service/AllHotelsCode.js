@@ -944,4 +944,109 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+  id: 20,
+  name: "DoubleTree by Hilton Nathiagali",
+  destination: "Nathia Gali",
+  province: "khyberPakhtunkhwa",
+  rating: 4.7,
+  reviews: 2150,
+  image: "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel1.webp",
+  images: [
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel1.webp",
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel2.webp",
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel3.webp",
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel4.webp"
+  ],
+  location: "Main Road, Nathia Gali",
+  description: "DoubleTree by Hilton Nathiagali is a luxury mountain hotel offering modern rooms, dining, an indoor pool, fitness facilities and spa services near the scenic hiking trails of Nathia Gali.",
+  price: 38000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "King Guest Room", price: 38000, guests: 2, beds: 1 },
+    { name: "Twin Guest Room", price: 38000, guests: 2, beds: 2 },
+    { name: "King Guest Room with View", price: 42000, guests: 2, beds: 1 },
+    { name: "One Bedroom Suite", price: 55000, guests: 3, beds: 1 },
+    { name: "Two Bedroom Suite", price: 75000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Indoor Swimming Pool",
+    "Fitness Center",
+    "Spa",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Balcony",
+    "Mountain View"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Spa Services",
+    "Parking",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 21,
+  name: "Hotel Elites NathiaGali",
+  destination: "Nathia Gali",
+  province: "khyberPakhtunkhwa",
+  rating: 4.2,
+  reviews: 5047,
+  image: "/Hotels/NathiaGaliHotels/HotelElitesNathiaGali/hotel1.webp",
+  images: [
+    "/Hotels/NathiaGaliHotels/HotelElitesNathiaGali/hotel1.webp",
+    "/Hotels/NathiaGaliHotels/HotelElitesNathiaGali/hotel2.webp"
+  ],
+  location: "Adjacent Civil Hospital, Nathia Gali",
+  description: "Hotel Elites NathiaGali offers comfortable accommodation with executive rooms, suites, apartments and cottages surrounded by the scenic mountain landscape of Nathia Gali.",
+  price: 14000,
+  maxGuests: 6,
+  roomTypes: [
+    { name: "Deluxe Room", price: 14000, guests: 2, beds: 1 },
+    { name: "Executive Room", price: 17000, guests: 2, beds: 1 },
+    { name: "Executive Suite with Balcony", price: 22000, guests: 3, beds: 1 },
+    { name: "3 Bedroom Apartment", price: 35000, guests: 6, beds: 3 },
+    { name: "3 Bedroom Cottage", price: 40000, guests: 6, beds: 3 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Balcony",
+    "Mountain View",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Garden"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Luggage Storage",
+    "Tour Assistance"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},git ad
 ];
