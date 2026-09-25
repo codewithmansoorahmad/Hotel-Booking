@@ -1110,8 +1110,8 @@ export const hotels = [
   image: "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel1.webp",
   images: [
     "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel1.webp",
-    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel2.webp",
-    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel3.webp"
+    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel2.jpg",
+    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel3.jpggit"
   ],
   location: "Jheel Saif ul Malook Road, Katha, Naran",
   description: "Rose Valley Hotel Naran provides comfortable accommodation in the Katha area of Naran with convenient access to the valley's scenic attractions.",
@@ -1156,7 +1156,7 @@ export const hotels = [
   image: "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel1.webp",
   images: [
     "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel1.webp",
-    "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel2.webp",
+    "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel2.jpg",
     "/Hotels/NaranHotels/TheSaraiHotelResortNaran/hotel3.webp"
   ],
   location: "Saiful Muluk Road, Katha, Naran",

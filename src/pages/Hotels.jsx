@@ -1,6 +1,8 @@
+import Images from "../components/CheckImages";
+
 export default function Hotels(){
 
  return   <div className="hotels">
-        <h1>hotels</h1>
+        <Images/>
     </div>
 }
