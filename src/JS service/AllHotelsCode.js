@@ -256,12 +256,12 @@ export const hotels = [
   province: "gilgitBaltistan",
   rating: 4.5,
   reviews: 396,
-  image: "/Hotels/SkarduHotels/HotelReegoSkardu/hotel1.webp",
+  image: "/Hotels/SkarduHotels/HotelReegoSkardu/hotel1.jpg",
   images: [
-    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel1.webp",
-    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel2.webp",
-    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel3.webp",
-    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel4.webp"
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel1.jpg",
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel2.jpg",
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel3.jpg",
+    "/Hotels/SkarduHotels/HotelReegoSkardu/hotel4.jpg"
   ],
   location: "Alamdar Road, Kargrong, Skardu",
   description: "Hotel Reego Skardu offers comfortable accommodation with mountain and garden views, a restaurant, family rooms and modern facilities.",
@@ -356,8 +356,8 @@ export const hotels = [
   image: "/Hotels/SkarduHotels/PCLegacySkardu/hotel1.webp",
   images: [
     "/Hotels/SkarduHotels/PCLegacySkardu/hotel1.webp",
-    "/Hotels/SkarduHotels/PCLegacySkardu/hotel2.webp",
-    "/Hotels/SkarduHotels/PCLegacySkardu/hotel3.webp",
+    "/Hotels/SkarduHotels/PCLegacySkardu/hotel2.jpg",
+    "/Hotels/SkarduHotels/PCLegacySkardu/hotel3.jpg",
     "/Hotels/SkarduHotels/PCLegacySkardu/hotel4.webp"
   ],
   location: "Airport Road, Gamba, Skardu",
@@ -409,8 +409,8 @@ export const hotels = [
   image: "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel1.webp",
   images: [
     "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel1.webp",
-    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel2.webp",
-    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel3.webp",
+    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel2.jpg",
+    "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel3.jpg",
     "/Hotels/SkarduHotels/ShangrilaResortSkardu/hotel4.webp"
   ],
   location: "Kachura, Skardu",
@@ -461,7 +461,7 @@ export const hotels = [
   image: "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel1.webp",
   images: [
     "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel1.webp",
-    "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel2.webp"
+    "/Hotels/RawalpindiHotels/GraceCrownHotel/hotel2.jpg"
   ],
   location: "Committee Chowk, Murree Road, Rawalpindi",
   description: "Grace Crown Hotel offers comfortable accommodation in Rawalpindi with well-appointed rooms, dining facilities and spaces for meetings and events.",
@@ -507,9 +507,9 @@ export const hotels = [
   image: "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel1.webp",
   images: [
     "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel1.webp",
-    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel2.webp",
-    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel3.webp",
-    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel4.webp"
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel2.jpg",
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel3.jpg",
+    "/Hotels/RawalpindiHotels/PearlContinentalHotelRawalpindi/hotel4.jpg"
   ],
   location: "The Mall Road, Rawalpindi",
   description: "Pearl-Continental Hotel Rawalpindi is a luxury five-star hotel offering elegant rooms and suites, multiple restaurants, swimming pools, spa facilities and a fitness centre.",
@@ -561,9 +561,9 @@ export const hotels = [
   image: "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel1.webp",
   images: [
     "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel1.webp",
-    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel2.webp",
-    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel3.webp",
-    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel4.webp"
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel2.jpg",
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel3.jpg",
+    "/Hotels/RawalpindiHotels/RoyaltonHotelRawalpindi/hotel4.jpg"
   ],
   location: "Liaqat Road, Opposite Liaquat Bagh, Rawalpindi",
   description: "Royalton Hotel Rawalpindi offers comfortable rooms with modern facilities, free WiFi, dining, parking and convenient access to central Rawalpindi.",
@@ -607,11 +607,11 @@ export const hotels = [
   province: "balochistan",
   rating: 4.3,
   reviews: 80,
-  image: "/Hotels/QuettaHotels/BestWesternQuetta/hotel1.webp",
+  image: "/Hotels/QuettaHotels/BestWesternQuetta/hotel1.png",
   images: [
-    "/Hotels/QuettaHotels/BestWesternQuetta/hotel1.webp",
-    "/Hotels/QuettaHotels/BestWesternQuetta/hotel2.webp",
-    "/Hotels/QuettaHotels/BestWesternQuetta/hotel3.webp"
+    "/Hotels/QuettaHotels/BestWesternQuetta/hotel1.png",
+    "/Hotels/QuettaHotels/BestWesternQuetta/hotel2.jpg",
+    "/Hotels/QuettaHotels/BestWesternQuetta/hotel3.jpg"
   ],
   location: "Hanna Mall 1, DHA, Quetta",
   description: "Best Western Quetta offers modern accommodation in DHA Quetta with comfortable rooms, dining facilities and contemporary amenities for business and leisure travelers.",
@@ -707,9 +707,9 @@ export const hotels = [
   province: "balochistan",
   rating: 4.4,
   reviews: 794,
-  image: "/Hotels/QuettaHotels/MetroHotelQuetta/hotel1.webp",
+  image: "/Hotels/QuettaHotels/MetroHotelQuetta/hotel1.jpg",
   images: [
-    "/Hotels/QuettaHotels/MetroHotelQuetta/hotel1.webp",
+    "/Hotels/QuettaHotels/MetroHotelQuetta/hotel1.jpg",
     "/Hotels/QuettaHotels/MetroHotelQuetta/hotel2.webp",
     "/Hotels/QuettaHotels/MetroHotelQuetta/hotel3.webp"
   ],
@@ -754,9 +754,9 @@ export const hotels = [
   province: "khyberPakhtunkhwa",
   rating: 4.1,
   reviews: 4022,
-  image: "/Hotels/PeshawarHotels/SheltonsRezidor/hotel1.webp",
+  image: "/Hotels/PeshawarHotels/SheltonsRezidor/hotel1.jpg",
   images: [
-    "/Hotels/PeshawarHotels/SheltonsRezidor/hotel1.webp",
+    "/Hotels/PeshawarHotels/SheltonsRezidor/hotel1.jpg",
     "/Hotels/PeshawarHotels/SheltonsRezidor/hotel2.webp",
     "/Hotels/PeshawarHotels/SheltonsRezidor/hotel3.webp",
     "/Hotels/PeshawarHotels/SheltonsRezidor/hotel4.webp"
@@ -857,11 +857,11 @@ export const hotels = [
   province: "khyberPakhtunkhwa",
   rating: 4.0,
   reviews: 1430,
-  image: "/Hotels/PeshawarHotels/HotelGrand/hotel1.webp",
+  image: "/Hotels/PeshawarHotels/HotelGrand/hotel1.jpg",
   images: [
-    "/Hotels/PeshawarHotels/HotelGrand/hotel1.webp",
-    "/Hotels/PeshawarHotels/HotelGrand/hotel2.webp",
-    "/Hotels/PeshawarHotels/HotelGrand/hotel3.webp"
+    "/Hotels/PeshawarHotels/HotelGrand/hotel1.jpg",
+    "/Hotels/PeshawarHotels/HotelGrand/hotel2.jpg",
+    "/Hotels/PeshawarHotels/HotelGrand/hotel3.jpg"
   ],
   location: "University Road, Tehkal, Peshawar",
   description: "Hotel Grand Peshawar offers comfortable accommodation on University Road with air-conditioned rooms, dining facilities, WiFi and parking.",
@@ -954,9 +954,9 @@ export const hotels = [
   image: "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel1.webp",
   images: [
     "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel1.webp",
-    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel2.webp",
-    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel3.webp",
-    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel4.webp"
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel2.jpg",
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel3.jpg",
+    "/Hotels/NathiaGaliHotels/DoubleTreebyHiltonNathiagali/hotel4.jpg"
   ],
   location: "Main Road, Nathia Gali",
   description: "DoubleTree by Hilton Nathiagali is a luxury mountain hotel offering modern rooms, dining, an indoor pool, fitness facilities and spa services near the scenic hiking trails of Nathia Gali.",
@@ -1111,7 +1111,7 @@ export const hotels = [
   images: [
     "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel1.webp",
     "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel2.jpg",
-    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel3.jpggit"
+    "/Hotels/NaranHotels/RoseValleyHotelNaran/hotel3.jpg"
   ],
   location: "Jheel Saif ul Malook Road, Katha, Naran",
   description: "Rose Valley Hotel Naran provides comfortable accommodation in the Katha area of Naran with convenient access to the valley's scenic attractions.",
@@ -1191,6 +1191,151 @@ export const hotels = [
     "Laundry",
     "Tour Assistance",
     "Outdoor Activities"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 25,
+  name: "Fiora Hotel Murree",
+  destination: "Murree",
+  province: "punjab",
+  rating: 4.2,
+  reviews: 1285,
+  image: "/Hotels/MurreeHotels/FioraHotelMurree/hotel1.webp",
+  images: [
+    "/Hotels/MurreeHotels/FioraHotelMurree/hotel1.webp",
+    "/Hotels/MurreeHotels/FioraHotelMurree/hotel2.jpg",
+    "/Hotels/MurreeHotels/FioraHotelMurree/hotel3.webp"
+  ],
+  location: "Mall Road, Murree",
+  description: "Fiora Hotel Murree offers comfortable accommodation in a convenient location near the main attractions and shopping areas of Murree.",
+  price: 10000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Room", price: 10000, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 13000, guests: 2, beds: 1 },
+    { name: "Family Room", price: 17000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Mountain View",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Balcony"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Luggage Storage"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 26,
+  name: "Grand Taj Hotel Murree",
+  destination: "Murree",
+  province: "punjab",
+  rating: 4.0,
+  reviews: 2180,
+  image: "/Hotels/MurreeHotels/GrandTajHotelMurree/hotel1.webp",
+  images: [
+    "/Hotels/MurreeHotels/GrandTajHotelMurree/hotel1.webp",
+    "/Hotels/MurreeHotels/GrandTajHotelMurree/hotel2.jpg",
+    "/Hotels/MurreeHotels/GrandTajHotelMurree/hotel3.jpg"
+  ],
+  location: "Cart Road, Murree",
+  description: "Grand Taj Hotel Murree provides comfortable rooms with mountain surroundings, dining facilities and convenient access to the main areas of Murree.",
+  price: 9000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Double Room", price: 9000, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 12000, guests: 2, beds: 1 },
+    { name: "Executive Room", price: 15000, guests: 3, beds: 2 },
+    { name: "Family Room", price: 18000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Mountain View",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Terrace"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Tour Assistance"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 27,
+  name: "Lockwood Hotel Murree",
+  destination: "Murree",
+  province: "punjab",
+  rating: 4.2,
+  reviews: 2650,
+  image: "/Hotels/MurreeHotels/LockwoodHotelMurree/hotel1.jpg",
+  images: [
+    "/Hotels/MurreeHotels/LockwoodHotelMurree/hotel1.jpg",
+    "/Hotels/MurreeHotels/LockwoodHotelMurree/hotel2.jpg",
+    "/Hotels/MurreeHotels/LockwoodHotelMurree/hotel3.webp"
+  ],
+  location: "Imtiaz Shaheed Road, Murree",
+  description: "Lockwood Hotel Murree offers comfortable accommodation with mountain views, an on-site restaurant and convenient access to Mall Road and Murree's attractions.",
+  price: 12000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard Room", price: 12000, guests: 2, beds: 1 },
+    { name: "Deluxe Room", price: 15000, guests: 2, beds: 1 },
+    { name: "Executive Room", price: 18000, guests: 3, beds: 2 },
+    { name: "Family Suite", price: 22000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Heating",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Mountain View",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Balcony",
+    "Garden"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Tour Assistance",
+    "Luggage Storage"
   ],
   checkIn: "2:00 PM",
   checkOut: "12:00 PM",
