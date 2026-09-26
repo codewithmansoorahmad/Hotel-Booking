@@ -2041,4 +2041,85 @@ export const hotels = [
     isBooked: false,
     available: true
 },
+{
+    id: 42,
+    name: "Hunza Serena Hotel",
+    destination: "Hunza",
+    province: "gilgitBaltistan",
+    rating: 4.6,
+    reviews: 684,
+    image: "/Hotels/HunzaHotels/HunzaSerenaHotel/hotel1.webp",
+    images: [
+        "/Hotels/HunzaHotels/HunzaSerenaHotel/hotel1.webp",
+        "/Hotels/HunzaHotels/HunzaSerenaHotel/hotel2.jpg",
+        "/Hotels/HunzaHotels/HunzaSerenaHotel/hotel3.jpg"
+    ],
+    location: "Karimabad, Hunza",
+    description: "A comfortable hotel surrounded by the scenic mountains of Hunza, offering a relaxing stay with beautiful views.",
+    price: 18000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 18000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 24000, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Mountain View",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 43,
+    name: "Luxus Hunza Attabad Lake Resort",
+    destination: "Hunza",
+    province: "gilgitBaltistan",
+    rating: 4.7,
+    reviews: 512,
+    image: "/Hotels/HunzaHotels/LuxusHunzaAttabadLakeResort/hotel1.webp",
+    images: [
+        "/Hotels/HunzaHotels/LuxusHunzaAttabadLakeResort/hotel1.webp",
+        "/Hotels/HunzaHotels/LuxusHunzaAttabadLakeResort/hotel2.webp"
+    ],
+    location: "Attabad Lake, Hunza",
+    description: "A scenic resort near Attabad Lake offering comfortable accommodation with stunning mountain and lake surroundings.",
+    price: 26000,
+    maxGuests: 4,
+    roomTypes: [
+        { name: "Deluxe Room", price: 26000, guests: 2, beds: 1 },
+        { name: "Lake View Room", price: 34000, guests: 3, beds: 2 },
+        { name: "Family Suite", price: 45000, guests: 4, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Lake View",
+        "Mountain View",
+        "Air Conditioning",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
 ];
