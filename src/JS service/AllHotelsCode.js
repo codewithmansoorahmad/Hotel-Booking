@@ -1342,4 +1342,60 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+  id: 28,
+  name: "Ramada by Wyndham Multan",
+  destination: "Multan",
+  province: "punjab",
+  rating: 4.2,
+  reviews: 3125,
+  image: "/Hotels/MultanHotels/RamadabyWyndhamMultan/hotel1.jpg",
+  images: [
+    "/Hotels/MultanHotels/RamadabyWyndhamMultan/hotel1.jpg",
+    "/Hotels/MultanHotels/RamadabyWyndhamMultan/hotel2.webp",
+    "/Hotels/MultanHotels/RamadabyWyndhamMultan/hotel3.webp",
+    "/Hotels/MultanHotels/RamadabyWyndhamMultan/hotel4.webp"
+  ],
+  location: "76 Abdali Road, Multan",
+  description: "Ramada by Wyndham Multan offers comfortable accommodation in central Multan with modern rooms, dining facilities, a swimming pool, fitness centre and event spaces.",
+  price: 18000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Standard King Room", price: 18000, guests: 2, beds: 1 },
+    { name: "Standard Twin Room", price: 18000, guests: 2, beds: 2 },
+    { name: "Deluxe King Room", price: 22000, guests: 2, beds: 1 },
+    { name: "Executive Suite", price: 30000, guests: 3, beds: 1 },
+    { name: "Family Suite", price: 35000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Swimming Pool",
+    "Fitness Center",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Tea/Coffee Maker",
+    "Minibar",
+    "Conference Facilities"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Parking",
+    "Event Services",
+    "Luggage Storage"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
