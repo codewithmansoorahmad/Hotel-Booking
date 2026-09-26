@@ -1615,4 +1615,218 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+  id: 33,
+  name: "Avari Towers Karachi",
+  destination: "Karachi",
+  province: "sindh",
+  rating: 4.5,
+  reviews: 50950,
+  image: "/Hotels/KarachiHotels/AvariTowersKarachi/hotel1.webp",
+  images: [
+    "/Hotels/KarachiHotels/AvariTowersKarachi/hotel1.webp",
+    "/Hotels/KarachiHotels/AvariTowersKarachi/hotel2.webp",
+    "/Hotels/KarachiHotels/AvariTowersKarachi/hotel3.webp"
+  ],
+  location: "Fatima Jinnah Road, Karachi",
+  description: "Avari Towers Karachi is an upscale hotel in Karachi's business district offering comfortable rooms, multiple dining options, an outdoor pool, spa, gym and tennis facilities.",
+  price: 28000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Deluxe Room", price: 28000, guests: 2, beds: 1 },
+    { name: "Executive Room", price: 33000, guests: 2, beds: 1 },
+    { name: "Executive Suite", price: 45000, guests: 3, beds: 1 },
+    { name: "Ambassador Suite", price: 60000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Swimming Pool",
+    "Fitness Center",
+    "Spa",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Tennis Court",
+    "Tea/Coffee Maker"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Spa Services",
+    "Valet Parking"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 34,
+  name: "Hotel Mehran",
+  destination: "Karachi",
+  province: "sindh",
+  rating: 4.1,
+  reviews: 8748,
+  image: "/Hotels/KarachiHotels/HotelMehran/hotel1.jpg",
+  images: [
+    "/Hotels/KarachiHotels/HotelMehran/hotel1.jpg",
+    "/Hotels/KarachiHotels/HotelMehran/hotel2.jpg",
+    "/Hotels/KarachiHotels/HotelMehran/hotel3.webp"
+  ],
+  location: "Shahrah-e-Faisal, Karachi",
+  description: "Hotel Mehran is a business hotel located on Shahrah-e-Faisal offering well-furnished rooms, dining, conference facilities, gym and round-the-clock room service.",
+  price: 18000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Deluxe King Single", price: 18000, guests: 1, beds: 1 },
+    { name: "Deluxe King Double", price: 21000, guests: 2, beds: 1 },
+    { name: "Deluxe Twin Room", price: 21000, guests: 2, beds: 2 },
+    { name: "Executive Suite", price: 30000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Fitness Center",
+    "Coffee Shop",
+    "Conference Facilities"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Parking",
+    "Airport Transfer",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 35,
+  name: "Karachi Marriott Hotel",
+  destination: "Karachi",
+  province: "sindh",
+  rating: 4.4,
+  reviews: 18901,
+  image: "/Hotels/KarachiHotels/KarachiMarriottHotel/hotel1.webp",
+  images: [
+    "/Hotels/KarachiHotels/KarachiMarriottHotel/hotel1.webp",
+    "/Hotels/KarachiHotels/KarachiMarriottHotel/hotel2.webp",
+    "/Hotels/KarachiHotels/KarachiMarriottHotel/hotel3.webp"
+  ],
+  location: "9 Abdullah Haroon Road, Karachi",
+  description: "Karachi Marriott Hotel is a luxury hotel in downtown Karachi offering modern rooms and suites, multiple restaurants, an outdoor Olympic-size pool, fitness centre and spa facilities.",
+  price: 30000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Superior King Room", price: 30000, guests: 2, beds: 1 },
+    { name: "Deluxe Twin Room", price: 30000, guests: 2, beds: 2 },
+    { name: "Executive King Room", price: 35000, guests: 2, beds: 1 },
+    { name: "Executive Suite", price: 48000, guests: 3, beds: 1 },
+    { name: "Royal Suite", price: 65000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Swimming Pool",
+    "Fitness Center",
+    "Spa",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Minibar",
+    "Executive Lounge"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Spa Services",
+    "Valet Parking",
+    "Event Services"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
+{
+  id: 36,
+  name: "Pearl-Continental Hotel Karachi",
+  destination: "Karachi",
+  province: "sindh",
+  rating: 4.5,
+  reviews: 28311,
+  image: "/Hotels/KarachiHotels/PearlContinentalHotelKarachi/hotel1.webp",
+  images: [
+    "/Hotels/KarachiHotels/PearlContinentalHotelKarachi/hotel1.webp",
+    "/Hotels/KarachiHotels/PearlContinentalHotelKarachi/hotel2.webp",
+    "/Hotels/KarachiHotels/PearlContinentalHotelKarachi/hotel3.webp",
+    "/Hotels/KarachiHotels/PearlContinentalHotelKarachi/hotel4.webp"
+  ],
+  location: "Club Road, Karachi",
+  description: "Pearl-Continental Hotel Karachi is a luxury five-star hotel on Club Road offering elegant rooms and suites, dining experiences, wellness facilities and modern business amenities.",
+  price: 30000,
+  maxGuests: 4,
+  roomTypes: [
+    { name: "Deluxe King Room", price: 30000, guests: 2, beds: 1 },
+    { name: "Deluxe Twin Room", price: 30000, guests: 2, beds: 2 },
+    { name: "Executive Room", price: 38000, guests: 2, beds: 1 },
+    { name: "Executive Suite", price: 50000, guests: 3, beds: 1 },
+    { name: "Royal Suite", price: 70000, guests: 4, beds: 2 }
+  ],
+  amenities: [
+    "Free WiFi",
+    "Air Conditioning",
+    "Private Bathroom",
+    "Flat Screen TV",
+    "Swimming Pool",
+    "Fitness Center",
+    "Spa",
+    "Restaurant",
+    "Room Service",
+    "Parking",
+    "Minibar",
+    "Conference Facilities"
+  ],
+  services: [
+    "24-hour Front Desk",
+    "Concierge",
+    "Housekeeping",
+    "Room Service",
+    "Laundry",
+    "Breakfast",
+    "Airport Shuttle",
+    "Spa Services",
+    "Event Services",
+    "Valet Parking"
+  ],
+  checkIn: "2:00 PM",
+  checkOut: "12:00 PM",
+  isBooked: false,
+  available: true
+},
 ];
