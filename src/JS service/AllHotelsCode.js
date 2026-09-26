@@ -2316,4 +2316,160 @@ export const hotels = [
     isBooked: false,
     available: true
 },
+{
+    id: 49,
+    name: "Ayun Fort Inn",
+    destination: "Chitral",
+    province: "khyberPakhtunkhwa",
+    rating: 4.4,
+    reviews: 241,
+    image: "/Hotels/ChitralHotels/AyunFortInn/hotel1.webp",
+    images: [
+        "/Hotels/ChitralHotels/AyunFortInn/hotel1.webp",
+        "/Hotels/ChitralHotels/AyunFortInn/hotel2.jpg",
+        "/Hotels/ChitralHotels/AyunFortInn/hotel3.jpg"
+    ],
+    location: "Ayun, Chitral",
+    description: "A peaceful stay surrounded by the natural beauty and mountain scenery of the Chitral region.",
+    price: 9000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 9000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 12500, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Mountain View",
+        "Parking",
+        "Restaurant",
+        "TV"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 50,
+    name: "Gahirat Castle",
+    destination: "Chitral",
+    province: "khyberPakhtunkhwa",
+    rating: 4.3,
+    reviews: 176,
+    image: "/Hotels/ChitralHotels/GahiratCastle/hotel1.webp",
+    images: [
+        "/Hotels/ChitralHotels/GahiratCastle/hotel1.webp",
+        "/Hotels/ChitralHotels/GahiratCastle/hotel2.jpg",
+        "/Hotels/ChitralHotels/GahiratCastle/hotel3.webp"
+    ],
+    location: "Gahirat, Chitral",
+    description: "A scenic accommodation offering a peaceful atmosphere and beautiful views of the surrounding mountains.",
+    price: 8500,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 8500, guests: 2, beds: 1 },
+        { name: "Family Room", price: 12000, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Mountain View",
+        "Parking",
+        "Restaurant",
+        "Garden"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 51,
+    name: "Hindukush Heights",
+    destination: "Chitral",
+    province: "khyberPakhtunkhwa",
+    rating: 4.6,
+    reviews: 438,
+    image: "/Hotels/ChitralHotels/HindukushHeights/hotel1.webp",
+    images: [
+        "/Hotels/ChitralHotels/HindukushHeights/hotel1.webp",
+        "/Hotels/ChitralHotels/HindukushHeights/hotel2.jpg",
+        "/Hotels/ChitralHotels/HindukushHeights/hotel3.jpg"
+    ],
+    location: "Chitral",
+    description: "A scenic mountain retreat offering comfortable accommodation and panoramic views of the Hindu Kush landscape.",
+    price: 14000,
+    maxGuests: 4,
+    roomTypes: [
+        { name: "Deluxe Room", price: 14000, guests: 2, beds: 1 },
+        { name: "Family Room", price: 19000, guests: 4, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Mountain View",
+        "Garden",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 52,
+    name: "Tower Hotel Chitral",
+    destination: "Chitral",
+    province: "khyberPakhtunkhwa",
+    rating: 4.0,
+    reviews: 143,
+    image: "/Hotels/ChitralHotels/TowerHotelChitral/hotel1.jpg",
+    images: [
+        "/Hotels/ChitralHotels/TowerHotelChitral/hotel1.jpg",
+        "/Hotels/ChitralHotels/TowerHotelChitral/hotel2.jpg",
+        "/Hotels/ChitralHotels/TowerHotelChitral/hotel3.jpg"
+    ],
+    location: "Chitral",
+    description: "A convenient hotel providing comfortable rooms and easy access to the main areas of Chitral.",
+    price: 7500,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 7500, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 10500, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
 ];
