@@ -1829,4 +1829,216 @@ export const hotels = [
   isBooked: false,
   available: true
 },
+{
+    id: 37,
+    name: "Hotel One Jinnah",
+    destination: "Islamabad",
+    province: "islamabadCapitalTerritory",
+    rating: 4.2,
+    reviews: 318,
+    image: "/Hotels/IslamabadHotels/HotelOneJinnah/hotel1.jpg",
+    images: [
+        "/Hotels/IslamabadHotels/HotelOneJinnah/hotel1.jpg",
+        "/Hotels/IslamabadHotels/HotelOneJinnah/hotel2.webp",
+        "/Hotels/IslamabadHotels/HotelOneJinnah/hotel3.webp",
+        "/Hotels/IslamabadHotels/HotelOneJinnah/hotel4.webp"
+    ],
+    location: "Jinnah Avenue, Islamabad",
+    description: "A comfortable hotel offering modern rooms and convenient access to Islamabad's major attractions.",
+    price: 12000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 12000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 16500, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Airport Transfer"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 38,
+    name: "Islamabad Hotel",
+    destination: "Islamabad",
+    province: "islamabadCapitalTerritory",
+    rating: 4.1,
+    reviews: 264,
+    image: "/Hotels/IslamabadHotels/IslamabadHotel/hotel1.webp",
+    images: [
+        "/Hotels/IslamabadHotels/IslamabadHotel/hotel1.webp",
+        "/Hotels/IslamabadHotels/IslamabadHotel/hotel2.jpg",
+        "/Hotels/IslamabadHotels/IslamabadHotel/hotel3.jpg"
+    ],
+    location: "G-6, Islamabad",
+    description: "A centrally located hotel with comfortable accommodation and easy access to the city's main areas.",
+    price: 10500,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 10500, guests: 2, beds: 1 },
+        { name: "Executive Room", price: 14500, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 39,
+    name: "Islamabad Marriott Hotel",
+    destination: "Islamabad",
+    province: "islamabadCapitalTerritory",
+    rating: 4.7,
+    reviews: 892,
+    image: "/Hotels/IslamabadHotels/IslamabadMarriottHotel/hotel1.webp",
+    images: [
+        "/Hotels/IslamabadHotels/IslamabadMarriottHotel/hotel1.webp",
+        "/Hotels/IslamabadHotels/IslamabadMarriottHotel/hotel2.webp",
+        "/Hotels/IslamabadHotels/IslamabadMarriottHotel/hotel3.webp",
+        "/Hotels/IslamabadHotels/IslamabadMarriottHotel/hotel4.jpg"
+    ],
+    location: "Aga Khan Road, Islamabad",
+    description: "A premium hotel offering elegant rooms, dining options and convenient access to central Islamabad.",
+    price: 28000,
+    maxGuests: 4,
+    roomTypes: [
+        { name: "Deluxe Room", price: 28000, guests: 2, beds: 1 },
+        { name: "Executive Room", price: 36000, guests: 3, beds: 2 },
+        { name: "Suite", price: 48000, guests: 4, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Swimming Pool",
+        "Fitness Center",
+        "Air Conditioning",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry",
+        "Airport Transfer"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 40,
+    name: "Islamabad Regalia Hotel",
+    destination: "Islamabad",
+    province: "islamabadCapitalTerritory",
+    rating: 4.4,
+    reviews: 421,
+    image: "/Hotels/IslamabadHotels/IslamabadRegaliaHotel/hotel1.webp",
+    images: [
+        "/Hotels/IslamabadHotels/IslamabadRegaliaHotel/hotel1.webp",
+        "/Hotels/IslamabadHotels/IslamabadRegaliaHotel/hotel2.webp",
+        "/Hotels/IslamabadHotels/IslamabadRegaliaHotel/hotel3.webp",
+        "/Hotels/IslamabadHotels/IslamabadRegaliaHotel/hotel4.webp"
+    ],
+    location: "H-12, Islamabad",
+    description: "A modern hotel providing stylish rooms and a comfortable stay in a convenient Islamabad location.",
+    price: 15000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Deluxe Room", price: 15000, guests: 2, beds: 1 },
+        { name: "Executive Room", price: 21000, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 41,
+    name: "Serena Hotel Islamabad",
+    destination: "Islamabad",
+    province: "islamabadCapitalTerritory",
+    rating: 4.8,
+    reviews: 1056,
+    image: "/Hotels/IslamabadHotels/SerenaHotel/hotel1.webp",
+    images: [
+        "/Hotels/IslamabadHotels/SerenaHotel/hotel1.webp",
+        "/Hotels/IslamabadHotels/SerenaHotel/hotel2.webp",
+        "/Hotels/IslamabadHotels/SerenaHotel/hotel3.webp",
+        "/Hotels/IslamabadHotels/SerenaHotel/hotel4.webp",
+        "/Hotels/IslamabadHotels/SerenaHotel/hotel5.webp"
+    ],
+    location: "Khayaban-e-Suharwardy, Islamabad",
+    description: "A luxury hotel known for elegant accommodation, refined dining and a peaceful setting in Islamabad.",
+    price: 32000,
+    maxGuests: 4,
+    roomTypes: [
+        { name: "Deluxe Room", price: 32000, guests: 2, beds: 1 },
+        { name: "Executive Room", price: 42000, guests: 3, beds: 2 },
+        { name: "Luxury Suite", price: 58000, guests: 4, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Swimming Pool",
+        "Fitness Center",
+        "Spa",
+        "Air Conditioning",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry",
+        "Airport Transfer",
+        "Concierge"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
 ];
