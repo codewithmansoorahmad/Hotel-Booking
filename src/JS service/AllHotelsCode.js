@@ -2472,4 +2472,85 @@ export const hotels = [
     isBooked: false,
     available: true
 },
+{
+    id: 53,
+    name: "Hotel One Abbottabad",
+    destination: "Abbottabad",
+    province: "khyberPakhtunkhwa",
+    rating: 4.2,
+    reviews: 285,
+    image: "/Hotels/AbbottabadHotels/HotelOneAbbottabad/hotel1.webp",
+    images: [
+        "/Hotels/AbbottabadHotels/HotelOneAbbottabad/hotel1.webp",
+        "/Hotels/AbbottabadHotels/HotelOneAbbottabad/hotel2.webp",
+        "/Hotels/AbbottabadHotels/HotelOneAbbottabad/hotel3.webp"
+    ],
+    location: "Abbottabad",
+    description: "A comfortable hotel offering modern accommodation and convenient access to the main areas of Abbottabad.",
+    price: 9000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 9000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 12500, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 54,
+    name: "Republika Urban Hotel by Summit Resorts",
+    destination: "Abbottabad",
+    province: "khyberPakhtunkhwa",
+    rating: 4.4,
+    reviews: 198,
+    image: "/Hotels/AbbottabadHotels/RepublikaUrbanHotellbySummitResorts/hotel1.webp",
+    images: [
+        "/Hotels/AbbottabadHotels/RepublikaUrbanHotellbySummitResorts/hotel1.webp",
+        "/Hotels/AbbottabadHotels/RepublikaUrbanHotellbySummitResorts/hotel2.jpg",
+        "/Hotels/AbbottabadHotels/RepublikaUrbanHotellbySummitResorts/hotel3.jpg",
+        "/Hotels/AbbottabadHotels/RepublikaUrbanHotellbySummitResorts/hotel4.jpg"
+    ],
+    location: "Abbottabad",
+    description: "A modern urban hotel providing stylish rooms and a comfortable base for exploring Abbottabad and the surrounding hills.",
+    price: 11000,
+    maxGuests: 4,
+    roomTypes: [
+        { name: "Standard Room", price: 11000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 15000, guests: 3, beds: 2 },
+        { name: "Family Room", price: 19000, guests: 4, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Mountain View",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
 ];
