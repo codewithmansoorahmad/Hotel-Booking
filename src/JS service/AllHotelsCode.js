@@ -2201,4 +2201,119 @@ export const hotels = [
     isBooked: false,
     available: true
 },
+{
+    id: 46,
+    name: "Dir Continental Hotel",
+    destination: "Dir",
+    province: "khyberPakhtunkhwa",
+    rating: 4.1,
+    reviews: 187,
+    image: "/Hotels/DirHotels/DirContinentalHotel/hotel1.jpg",
+    images: [
+        "/Hotels/DirHotels/DirContinentalHotel/hotel1.jpg",
+        "/Hotels/DirHotels/DirContinentalHotel/hotel2.jpg"
+    ],
+    location: "Dir, Khyber Pakhtunkhwa",
+    description: "A comfortable hotel providing convenient accommodation for travelers exploring the scenic Dir region.",
+    price: 8000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 8000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 11000, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 47,
+    name: "Shelton Resort Hotel Kumrat Road",
+    destination: "Dir",
+    province: "khyberPakhtunkhwa",
+    rating: 4.2,
+    reviews: 156,
+    image: "/Hotels/DirHotels/SheltonresortHotelKumratRoad/hotel1.webp",
+    images: [
+        "/Hotels/DirHotels/SheltonresortHotelKumratRoad/hotel1.webp",
+        "/Hotels/DirHotels/SheltonresortHotelKumratRoad/hotel2.jpg",
+        "/Hotels/DirHotels/SheltonresortHotelKumratRoad/hotel3.jpg"
+    ],
+    location: "Kumrat Road, Dir",
+    description: "A relaxing resort-style stay near the scenic routes leading toward the Kumrat Valley.",
+    price: 9500,
+    maxGuests: 4,
+    roomTypes: [
+        { name: "Standard Room", price: 9500, guests: 2, beds: 1 },
+        { name: "Family Room", price: 14000, guests: 4, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Mountain View",
+        "Parking",
+        "Restaurant",
+        "TV"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 48,
+    name: "Shelton Rezidor Hotel & Restaurant",
+    destination: "Dir",
+    province: "khyberPakhtunkhwa",
+    rating: 4.0,
+    reviews: 132,
+    image: "/Hotels/DirHotels/SheltonrezidorHotelRestaurant/hotel1.webp",
+    images: [
+        "/Hotels/DirHotels/SheltonrezidorHotelRestaurant/hotel1.webp",
+        "/Hotels/DirHotels/SheltonrezidorHotelRestaurant/hotel2.png",
+        "/Hotels/DirHotels/SheltonrezidorHotelRestaurant/hotel3.png"
+    ],
+    location: "Dir, Khyber Pakhtunkhwa",
+    description: "A practical accommodation option offering comfortable rooms and dining facilities for visitors to the Dir region.",
+    price: 8500,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 8500, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 11500, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
 ];
