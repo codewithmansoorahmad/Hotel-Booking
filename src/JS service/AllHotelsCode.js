@@ -2122,4 +2122,83 @@ export const hotels = [
     isBooked: false,
     available: true
 },
+{
+    id: 44,
+    name: "Faisalabad Serena Hotel",
+    destination: "Faisalabad",
+    province: "punjab",
+    rating: 4.5,
+    reviews: 576,
+    image: "/Hotels/FaisalabadHotels/FaisalabadSerenaHotel/hotel1.webp",
+    images: [
+        "/Hotels/FaisalabadHotels/FaisalabadSerenaHotel/hotel1.webp",
+        "/Hotels/FaisalabadHotels/FaisalabadSerenaHotel/hotel2.jpg",
+        "/Hotels/FaisalabadHotels/FaisalabadSerenaHotel/hotel3.jpg"
+    ],
+    location: "Club Road, Faisalabad",
+    description: "A well-established hotel offering comfortable rooms, dining facilities and convenient access to central Faisalabad.",
+    price: 15000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 15000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 20000, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
+
+{
+    id: 45,
+    name: "Avari Xpress Hotel Faisalabad",
+    destination: "Faisalabad",
+    province: "punjab",
+    rating: 4.3,
+    reviews: 394,
+    image: "/Hotels/FaisalabadHotels/AvariXpressHotelFaisalabad/hotel1.jpg",
+    images: [
+        "/Hotels/FaisalabadHotels/AvariXpressHotelFaisalabad/hotel1.jpg",
+        "/Hotels/FaisalabadHotels/AvariXpressHotelFaisalabad/hotel2.webp",
+        "/Hotels/FaisalabadHotels/AvariXpressHotelFaisalabad/hotel3.webp"
+    ],
+    location: "Faisalabad",
+    description: "A modern hotel offering stylish accommodation and convenient facilities for business and leisure travelers.",
+    price: 13000,
+    maxGuests: 3,
+    roomTypes: [
+        { name: "Standard Room", price: 13000, guests: 2, beds: 1 },
+        { name: "Deluxe Room", price: 18000, guests: 3, beds: 2 }
+    ],
+    amenities: [
+        "Free WiFi",
+        "Air Conditioning",
+        "TV",
+        "Parking",
+        "Restaurant"
+    ],
+    services: [
+        "24-hour Front Desk",
+        "Room Service",
+        "Housekeeping",
+        "Laundry"
+    ],
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    isBooked: false,
+    available: true
+},
 ];
