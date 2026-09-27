@@ -7,7 +7,7 @@ export default function HomeHotels(){
     const homeHotels=poularRatedHotels.slice(0,6)
     return <div className="home-hotels">
 
-        <h1>Highest Rated Hotels In StayFinder.</h1>
+        <h1>Highest Rated Hotels In StayFinder</h1>
         <div className="rated-hotels">
 
         {
