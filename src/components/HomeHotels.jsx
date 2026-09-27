@@ -1,4 +1,4 @@
-import { Star } from "lucide-react"
+import { ArrowRight, Star } from "lucide-react"
 import { hotels } from "../JS service/AllHotelsCode"
 
 export default function HomeHotels(){
@@ -6,7 +6,10 @@ export default function HomeHotels(){
     const poularRatedHotels=hotels.sort((a,b)=>b.rating-a.rating)
     const homeHotels=poularRatedHotels.slice(0,6)
     return <div className="home-hotels">
+
         <h1>Highest Rated Hotels In StayFinder.</h1>
+        <div className="rated-hotels">
+
         {
             homeHotels.map((hotel)=>{
                 return <div className="hotel" key={hotel.id}>
@@ -18,5 +21,7 @@ export default function HomeHotels(){
                 </div>
             })
         }
+        </div>
+
     </div>
 }
