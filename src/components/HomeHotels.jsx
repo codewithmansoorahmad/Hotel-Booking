@@ -12,12 +12,11 @@ export default function HomeHotels(){
                 return <div className="hotel" key={hotel.id}>
                     <img src={hotel.image} alt="" />
                     <h1>{hotel.name}</h1>
-                    <h2>Rating: {hotel.rating} <Star size={20} className="star"/></h2>
+                    <h2>Rating: {hotel.rating} <Star size={20} fill="yellow" clor className="star"/></h2>
                     <h3>{hotel.destination}</h3>
                     <p>{hotel. description}</p>
                 </div>
             })
         }
-
     </div>
 }
