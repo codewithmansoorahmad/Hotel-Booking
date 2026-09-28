@@ -3,6 +3,7 @@ import HotelsHero from "../components/HotelsHero"
 import { useParams } from "react-router-dom"
 import { allDestinations } from "../JS service/DestinationsCode"
 import "../css/Hotels.css"
+import HotelsMain from "../components/HotelsMain"
 
 export default function Hotels(){
       const {id}=useParams()
@@ -18,6 +19,7 @@ console.log(findProvince)
 
  return   <div className="hotels">
     <HotelsHero rating={rating} setRating={setRating} price={price} setPrice={setPrice} sort={sort} setSort={setSort} destination={destination} setDestination={setDestination} allProvinces={allProvinces} setAllProvinces={setAllProvinces}/>
+    <HotelsMain price={price}  sort={sort}  destination={destination}  allProvinces={allProvinces} />
 
 
 
