@@ -2,6 +2,7 @@ import { useState } from "react"
 import HotelsHero from "../components/HotelsHero"
 import { useParams } from "react-router-dom"
 import { allDestinations } from "../JS service/DestinationsCode"
+import "../css/Hotels.css"
 
 export default function Hotels(){
       const {id}=useParams()

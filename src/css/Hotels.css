@@ -1,0 +1,108 @@
+.hotels-hero {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto 35px;
+}
+
+.hotels-hero-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.hotels-hero-intro h1 {
+    margin: 0 0 8px;
+    font-family: "Mulish", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+}
+
+.hotels-hero-intro p {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    color: #777;
+}
+
+.filters-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 12px;
+}
+
+.destination-filter,
+.province-filter,
+.price-filter,
+.sort-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.destination-filter label,
+.province-filter label,
+.price-filter label,
+.sort-filter label {
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.destination-filter select,
+.province-filter select,
+.price-filter select,
+.sort-filter select {
+    width: 100%;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: white;
+    color: #333;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.destination-filter select:focus,
+.province-filter select:focus,
+.price-filter select:focus,
+.sort-filter select:focus {
+    border-color: #999;
+}
+
+@media (max-width: 900px) {
+    .filters-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hotels-hero {
+        width: 90%;
+        margin: 40px auto 30px;
+    }
+
+    .hotels-hero-intro {
+        margin-bottom: 25px;
+    }
+
+    .hotels-hero-intro h1 {
+        font-size: 30px;
+    }
+
+    .hotels-hero-intro p {
+        font-size: 15px;
+    }
+
+    .filters-options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 16px;
+    }
+}

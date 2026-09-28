@@ -7,8 +7,7 @@ export default function HotelsHero({
   setDestination,
   allProvinces,
   setAllProvinces,
-  rating,
-  setRating,
+  
   price,
   setPrice,
   sort,
@@ -16,7 +15,15 @@ export default function HotelsHero({
 }) {
    console.log(allProvinces)
     const destinations=allDestinations.map((item)=>item.name)
-    const provinces=allDestinations.map((item)=>item.province)
+    const provincesAll=allDestinations.map((item)=>item.province)
+    const provinces=[]
+    for(let i=0;i<provincesAll.length;i++){
+        if(!provinces.includes(provincesAll[i])){
+        provinces.push(provincesAll[i])
+
+        }
+    }
+
 
   
 
