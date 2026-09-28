@@ -14,10 +14,10 @@ export default function HotelsHero({
   sort,
   setSort,
 }) {
-    useEffect(()=>{
-        console.log(destination)
-    },[destination])
+   console.log(allProvinces)
     const destinations=allDestinations.map((item)=>item.name)
+    const provinces=allDestinations.map((item)=>item.province)
+
   
 
   return <div className="hotels-hero">
@@ -31,14 +31,28 @@ export default function HotelsHero({
             <label htmlFor="select-destinaiton-filter">
                 Destination
             </label>
-            <select  id="select-destinaiton-filter"  onChange={(e)=>setDestination(e.target.value)}>
+            <select  id="select-destinaiton-filter"  value={destination} onChange={(e)=>setDestination(e.target.value)}>
                 <option value="All">All</option>
 {
     destinations.map((item,index)=>{
         return <option value={item} key={index}>{item}</option>
     })
 }
+
             </select>
+        </div>
+
+        <div className="province-filter">
+            <label htmlFor="select-province-filter"></label>
+            <select  id="select-province-filter" value={allProvinces} onChange={(e)=>{setAllProvinces(e.target.value);setDestination("All")}}>
+                <option value="All">All</option>
+              {
+    provinces.map((item,index)=>{
+        return <option value={item} key={index}>{item}</option>
+    })
+}
+            </select>
+
         </div>
 
     </div>
