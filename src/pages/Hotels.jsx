@@ -14,12 +14,11 @@ const [allProvinces,setAllProvinces]=useState(findProvince)
 const [rating,setRating]=useState("")
 const [price,setPrice]=useState(0)
 const [sort,setSort]=useState("")
-console.log(destination)
-console.log(findProvince)
+
 
  return   <div className="hotels">
     <HotelsHero rating={rating} setRating={setRating} price={price} setPrice={setPrice} sort={sort} setSort={setSort} destination={destination} setDestination={setDestination} allProvinces={allProvinces} setAllProvinces={setAllProvinces}/>
-    <HotelsMain price={price}  sort={sort}  destination={destination}  allProvinces={allProvinces} />
+    <HotelsMain price={price}  sorting={sort}  destination={destination}  allProvinces={allProvinces} />
 
 
 

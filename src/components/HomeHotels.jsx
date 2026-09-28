@@ -1,10 +1,11 @@
-import { ArrowRight, Star } from "lucide-react"
+import {  Star } from "lucide-react"
 import { hotels } from "../JS service/AllHotelsCode"
 
 export default function HomeHotels(){
 
-    const poularRatedHotels=hotels.sort((a,b)=>b.rating-a.rating)
-    const homeHotels=poularRatedHotels.slice(0,6)
+    const popularRatedHotels=hotels.sort((a,b)=>b.rating-a.rating)
+    const homeHotels=popularRatedHotels.slice(0,6)
+
     return <div className="home-hotels">
 
         <h1>Highest Rated Hotels In StayFinder</h1>

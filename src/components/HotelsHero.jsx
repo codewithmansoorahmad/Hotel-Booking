@@ -7,13 +7,11 @@ export default function HotelsHero({
   setDestination,
   allProvinces,
   setAllProvinces,
-  
   price,
   setPrice,
   sort,
   setSort,
 }) {
-   console.log(allProvinces)
     const destinations=allDestinations.map((item)=>item.name)
     const provincesAll=allDestinations.map((item)=>item.province)
     const provinces=[]
