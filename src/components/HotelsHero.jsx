@@ -55,6 +55,16 @@ export default function HotelsHero({
 
         </div>
 
+        <div className="price-filter">
+            <select  id="select-price-filter" value={price} onChange={(e)=>setPrice(e.target.value)}>
+                <option value="Any Price">Any Price</option>
+                <option value="30000">Above 30000</option>
+                <option value="20000">Above 20000</option>
+                <option value="10000">Above 10000</option>
+                <option value="1000">Above 1000</option>
+            </select>
+        </div>
+
     </div>
 
 
