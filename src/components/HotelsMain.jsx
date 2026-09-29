@@ -19,40 +19,42 @@ function getHotels(){
 
    }
    
- if(price=="Any Price"){
-    
- }
+
  if(price!=="Any Price"){
      const priceHotels=result.filter((item)=>item.price<Number(price))
      result =priceHotels
  }
+// if(price==="Any Price"){
 
+// }
    
     if(sorting==="rating-high"){
-        const sortHighRating=result.sort((a,b)=>b.rating-a.rating)
-        console.log(sortHighRating)
-        return
+       result.sort((a,b)=>b.rating-a.rating)
+
     }
     if(sorting==="lowest-price"){
-        const sortLowestPrice=result.sort((a,b)=>a.price-b.price)
-        return
+       result.sort((a,b)=>a.price-b.price)
+
     }
     if(sorting==="highest-price"){
-        const sortHighestPrice=result.sort((a,b)=>b.price-a.price)
-        return 
-    }
-//    
+    result.sort((a,b)=>b.price-a.price)
 
+    }
+setAllHotels(result)
+console.log(allHotels)
 
 
 }
 useEffect(()=>{
 getHotels()
+
 },[price, sorting, destination,  allProvinces])
 
 
     return <div className="hotels-Main">
-        
+        {
+            allHotels.map
+        }
 
     </div>
 } 
