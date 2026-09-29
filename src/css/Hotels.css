@@ -106,3 +106,113 @@
         padding: 16px;
     }
 }
+
+
+
+.hotels-by-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Mulish", sans-serif;
+}
+
+.hotels-by-page > button {
+    flex: 1;
+    max-width: 120px;
+    min-width: 0;
+    height: 42px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.count {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.count .page {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    flex-shrink: 1;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: white;
+    color: #333;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+    .hotels-by-page {
+        width: 95%;
+        gap: 5px;
+    }
+
+    .hotels-by-page > button {
+        height: 36px;
+        padding: 0 5px;
+        font-size: 11px;
+    }
+
+    .count {
+        gap: 3px;
+    }
+
+    .count .page {
+        width: 32px;
+        height: 36px;
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .hotels-by-page {
+        width: 98%;
+        gap: 3px;
+    }
+
+    .hotels-by-page > button {
+        height: 32px;
+        padding: 0 3px;
+        font-size: 10px;
+    }
+
+    .hotels-by-page > button svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .count {
+        gap: 2px;
+    }
+
+    .count .page {
+        width: 27px;
+        height: 32px;
+        font-size: 10px;
+    }
+}
