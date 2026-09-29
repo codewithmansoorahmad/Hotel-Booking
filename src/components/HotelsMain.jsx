@@ -50,9 +50,9 @@ getHotels()
 
 
 },[price, sorting, destination,  allProvinces])
-// useEffect(() => {
-//     console.log(allHotels)
-// }, [allHotels])
+useEffect(() => {
+    console.log(allHotels)
+}, [allHotels])
 let firstSLice=allHotels.slice(0,9)
     return <div className="hotels-Main">
 

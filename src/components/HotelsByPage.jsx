@@ -2,13 +2,12 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 
 export default function HotelsByPage({allHotels}){
     let count=allHotels.length/9
-    let countRound=Math.round(count)
+    let countRound=Math.ceil(count)
 let resultCount=[]
    
     for(let i=1;i<=countRound;i++){
         resultCount.push(i)
     }
-    console.log(resultCount)
 
     return <div className="hotels-by-page">
 <button><span><ArrowLeft/></span> Previous</button>
