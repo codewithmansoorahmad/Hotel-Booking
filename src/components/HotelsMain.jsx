@@ -4,35 +4,47 @@ import { hotels } from "../JS service/AllHotelsCode"
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
 
 const [allHotels,setAllHotels]=useState(hotels)
+const [allPrice,setAllPrice]=useState(null)
 function getHotels(){
+    let result=hotels
+       if(allProvinces!=="All"){
+    const provincesHotels=result.filter((item)=>item.province.toLowerCase()===allProvinces.toLowerCase())
+    setAllHotels(provincesHotels)
+   }
+    if(allProvinces==="All"){
+     setAllHotels(hotels)
+     }
+      if(destination!=="All"){
+     const destinationsHotels=result.filter((item)=>item.destination.toLowerCase()===destination.toLowerCase())
+    //  setAllHotels(destinationsHotels)
+     result =priceHotels
+
+   }
+   
+ if(price=="Any Price"){
+     result =priceHotels
+
+ }
+ if(price!=="Any Price"){
+     const priceHotels=result.filter((item)=>item.price<Number(price))
+     result =priceHotels
+ }
+
+   
     if(sorting==="rating-high"){
-        const sortHighRating=allHotels.sort((a,b)=>a.rating-b.rating)
+        const sortHighRating=result.sort((a,b)=>b.rating-a.rating)
         console.log(sortHighRating)
-        console.log(allHotels,sorting)
+        return
     }
     if(sorting==="lowest-price"){
-        const sortLowestPrice=allHotels.sort((a,b)=>b.price-a.price)
-        console.log(sortLowestPrice)
+        const sortLowestPrice=result.sort((a,b)=>a.price-b.price)
+        return
     }
     if(sorting==="highest-price"){
-        const sortHighestPrice=allHotels.sort((a,b)=>a.price-b.price)
-        console.log(sortHighestPrice)
+        const sortHighestPrice=result.sort((a,b)=>b.price-a.price)
+        return 
     }
-    if(destination==="All" && allProvinces==="All" && price==="Any Price" ){
-        setAllHotels(hotels)
-    }
-    const provincesHotels=hotels.filter((item)=>item.province.toLowerCase()===allProvinces.toLowerCase())
-    console.log(provincesHotels)
-    setAllHotels(provincesHotels)
-    const destinationsHotels=hotels.filter((item)=>item.destination===destination)
-    console.log(destinationsHotels)
-    setAllHotels(destinationsHotels)
-
-    const priceHotels=hotels.filter((item)=>item.price<Number(price))
-    setAllHotels(priceHotels)
-
-
-    
+//    
 
 
 
@@ -40,6 +52,9 @@ function getHotels(){
 useEffect(()=>{
 getHotels()
 },[price, sorting, destination,  allProvinces])
+
+const hotelsMap=allPrice===null?allHotels:allPrice
+console.log(hotelsMap)
 
     return <div className="hotels-Main">
         

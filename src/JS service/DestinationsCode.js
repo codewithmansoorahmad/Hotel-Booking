@@ -98,13 +98,7 @@ export const allDestinations=[
         id:6
 
     },
-    {
-        name:"Hunza",
-        province:"Gilgit",
-        image:hunza,
-        id:7
-
-    },
+  
     {
     name: "Abbottabad",
     province: "khyberPakhtunkhwa",

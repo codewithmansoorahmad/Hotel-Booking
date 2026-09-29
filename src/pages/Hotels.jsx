@@ -12,7 +12,7 @@ export default function Hotels(){
 const [destination,setDestination]=useState(findDestination)
 const [allProvinces,setAllProvinces]=useState(findProvince)
 const [rating,setRating]=useState("")
-const [price,setPrice]=useState(0)
+const [price,setPrice]=useState("Any Price")
 const [sort,setSort]=useState("")
 
 
