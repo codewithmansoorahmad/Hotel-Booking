@@ -13,6 +13,7 @@ export default function HotelsHero({
   sort,
   setSort,
 }) {
+
   const destinationsWIthProvince=allProvinces!=="All"?allDestinations.filter((item)=>item.province===allProvinces):allDestinations
   const destinations = destinationsWIthProvince.map((item) => item.name);
   const provincesAll = allDestinations.map((item) => item.province);
@@ -22,6 +23,7 @@ export default function HotelsHero({
       provinces.push(provincesAll[i]);
     }
   }
+  console.log(destinations)
 
   return (
     <div className="hotels-hero">
@@ -40,7 +42,7 @@ export default function HotelsHero({
              
             }}
           >
-            <option value="All">All</option>
+            {destinations.length>1?<option value="All">All</option>:null}
             {destinations.map((item, index) => {
               return (
                 <option value={item} key={index}>

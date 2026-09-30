@@ -66,7 +66,7 @@ let firstSLice=allHotels.slice(0,9)
                     <h2>{item.destination}</h2>
                     <p  ><MapPin className="icon" size={20}/><span>{item.province}</span></p>
                     <p>{item.rating} <Star className="star"/></p>
-                    <p>{item.price}</p>
+                    <p>RS: {item.price}</p>
                     <p>{item.description}</p>
                     <button>Book Hotel</button>
                 </div>
