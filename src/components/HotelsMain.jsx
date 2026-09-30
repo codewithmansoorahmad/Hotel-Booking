@@ -4,7 +4,8 @@ import HotelsByPage from "./HotelsByPage"
 import { Heart, MapPin, Star } from "lucide-react"
 
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
-
+const [start,setStart]=useState(0)
+const [end,setEnd]=useState(9)
 const [allHotels,setAllHotels]=useState(hotels)
 function getHotels(){
     let result=hotels
@@ -52,11 +53,10 @@ getHotels()
 useEffect(() => {
     console.log(allHotels)
 }, [allHotels])
-let firstSLice=allHotels.slice(0,9)
+let firstSLice=allHotels.slice(start,end)
     return <div className="hotels-Main">
 <h1>{allHotels.length} Hotels Available </h1>
         <div className="hotels-grid">
-
         {
             firstSLice.map((item)=>{
                 return <div className="hotel-page" key={item.id}>
@@ -75,6 +75,6 @@ let firstSLice=allHotels.slice(0,9)
         </div>
 
 
-<HotelsByPage allHotels={allHotels}/>
+<HotelsByPage allHotels={allHotels} setStart={setStart} setEnd={setEnd} start={start} end={end} />
     </div>
 } 
