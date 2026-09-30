@@ -139,7 +139,10 @@
     cursor: pointer;
 
 }
-
+.hotels-by-page .block{
+    background-color: gray;
+    cursor: not-allowed;
+}
 .count {
     flex: 0 1 auto;
     display: flex;
