@@ -12,7 +12,6 @@ console.log(start,end)
 function getNext(){
     setNumber(number+1)
 
-    
     const next=number + 1
     setIsPrev(false)   
     if(next===resultCount[resultCount.length-1]){
@@ -21,6 +20,21 @@ function getNext(){
     }
      setStart(start + 9)
     setEnd(end + 9)
+}
+function getByClick(value){
+    setIsNext(false)
+    setIsPrev(false)
+    setNumber(value)
+    console.log(value)
+    setEnd(9*Number(value))
+    setStart((9*Number(value))-9)
+    if(value===1){
+        setIsPrev(true)
+    }
+    if(value===countRound){
+        setIsNext(true)
+    }
+    
 }
 function getPrevious(){
     setNumber(number-1)
@@ -45,7 +59,7 @@ function getPrevious(){
 <button  className={isPrev?"btn block":"btn"} onClick={getPrevious} disabled={isPrev}><span ><ArrowLeft/></span> Previous</button>
 <div className="count">
 {
-    resultCount.map((item)=> <button id={number}  className={number!==item?"page":"page num" } key={item}>{item}</button> )
+    resultCount.map((item)=> <button onClick={(e)=>getByClick(item)} id={number}  className={number!==item?"page":"page num" } key={item}>{item}</button> )
 
 }
 </div>
