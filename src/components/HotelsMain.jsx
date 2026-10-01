@@ -7,6 +7,8 @@ export default function HotelsMain({ price, sorting, destination,  allProvinces}
 const [start,setStart]=useState(0)
 const [end,setEnd]=useState(9)
 const [allHotels,setAllHotels]=useState(hotels)
+    let [number,setNumber]=useState(1)
+
 function getHotels(){
     let result=hotels
        if(allProvinces!=="All"){
@@ -49,10 +51,12 @@ setAllHotels(result)
 }
 useEffect(()=>{
 getHotels()
+    setNumber(1)
+    setStart(0)
+    setEnd(9)
+
 },[price, sorting, destination,  allProvinces])
-useEffect(() => {
-    console.log(allHotels)
-}, [allHotels])
+
 let firstSLice=allHotels.slice(start,end)
     return <div className="hotels-Main">
 <h1>{allHotels.length} Hotels Available </h1>
@@ -75,6 +79,6 @@ let firstSLice=allHotels.slice(start,end)
         </div>
 
 
-<HotelsByPage allHotels={allHotels} setStart={setStart} setEnd={setEnd} start={start} end={end} />
+<HotelsByPage number={number} setNumber={setNumber} allHotels={allHotels} setStart={setStart} setEnd={setEnd} start={start} end={end} />
     </div>
 } 

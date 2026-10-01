@@ -1,15 +1,12 @@
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
 
-export default function HotelsByPage({allHotels,setStart,end,start,setEnd}){
-    useEffect(()=>{
-        
-    })
+export default function HotelsByPage({allHotels,setStart,end,start,setEnd,number,setNumber}){
+    
     let count=allHotels.length/9
     let countRound=Math.ceil(count)
     let [isNext,setIsNext]=useState(false)
     let [isPrev,setIsPrev]=useState(true)
-    let [number,setNumber]=useState(1)
 let resultCount=[]
 console.log(start,end)
 function getNext(){
