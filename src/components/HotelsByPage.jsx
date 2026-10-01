@@ -7,34 +7,16 @@ export default function HotelsByPage({allHotels,setStart,end,start,setEnd}){
     let [isNext,setIsNext]=useState(false)
     let [isPrev,setIsPrev]=useState(start>0?false:true)
 let resultCount=[]
-console.log(start>=allHotels.length)
 function getNext(){
-
-    let next=start+9
+    const next=start + 9
     if(next>=allHotels.length){
- 
-    setIsNext(true)
-return
+        console.log("No More Next")
+        return
     }
-    setIsPrev(false)
-     setStart(prev=>prev+9)
-    setEnd(prev=>prev+9)
-
+    setStart(start + 9)
+    setEnd(end + 9)
 }
-function getPrevious(){
 
-    let previous=start-9
-    if(previous<0){
-    //     console.log(start)
-    //     setStart(0)
-    // setEnd(9)
-    setIsPrev(true)
-return
-    }
-     setStart(prev=>prev-9)
-    setEnd(prev=>prev-9)
-
-}
    
     for(let i=1;i<=countRound;i++){
         resultCount.push(i)
