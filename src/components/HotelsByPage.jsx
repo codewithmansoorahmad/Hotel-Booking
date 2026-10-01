@@ -11,12 +11,8 @@ let resultCount=[]
 console.log(start,end)
 function getNext(){
     setNumber(number+1)
-     setStart(start + 9)
-    setEnd(end + 9)
+    
     const next=start + 9
-
-    console.log(next)
-    console.log(start,end)
     setIsPrev(false)
 
    
@@ -25,9 +21,11 @@ function getNext(){
         setIsNext(true)
         return
     }
-    
+     setStart(start + 9)
+    setEnd(end + 9)
 }
 function getPrevious(){
+    setNumber(number-1)
     let previous=start-9
     setEnd(end-9)
     setStart(start-9)
