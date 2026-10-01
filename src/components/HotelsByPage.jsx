@@ -12,9 +12,7 @@ function getNext(){
 
     let next=start+9
     if(next>=allHotels.length){
-    //     console.log(start)
-    //     setStart(0)
-    // setEnd(9)
+ 
     setIsNext(true)
 return
     }
