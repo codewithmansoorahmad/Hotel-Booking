@@ -10,6 +10,7 @@ export default function HotelsByPage({allHotels,setStart,end,start,setEnd}){
 let resultCount=[]
 console.log(start,end)
 function getNext(){
+    setNumber(number+1)
      setStart(start + 9)
     setEnd(end + 9)
     const next=start + 9
@@ -50,10 +51,10 @@ function getPrevious(){
 <button  className={isPrev?"btn block":"btn"} onClick={getPrevious} disabled={isPrev}><span ><ArrowLeft/></span> Previous</button>
 <div className="count">
 {
-    resultCount.map((item)=> <button id={number}  className="page" key={item}>{item}</button> )
+    resultCount.map((item)=> <button id={number}  className={number!==item?"page":"page num" } key={item}>{item}</button> )
 
 }
 </div>
-<button onClick={getNext} disabled={isNext} className={isNext?"btn block":"btn"}>Next <span ><ArrowRight/></span> </button>
+<button onClick={getNext} disabled={isNext}  className={isNext?"btn block":"btn"}>Next <span ><ArrowRight/></span> </button>
     </div>
 }
