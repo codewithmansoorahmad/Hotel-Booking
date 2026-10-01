@@ -1,7 +1,10 @@
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function HotelsByPage({allHotels,setStart,end,start,setEnd}){
+    useEffect(()=>{
+        
+    })
     let count=allHotels.length/9
     let countRound=Math.ceil(count)
     let [isNext,setIsNext]=useState(false)
@@ -11,32 +14,28 @@ let resultCount=[]
 console.log(start,end)
 function getNext(){
     setNumber(number+1)
-    
-    const next=start + 9
-    setIsPrev(false)
 
-   
-    if(next>=allHotels.length){
+    
+    const next=number + 1
+    setIsPrev(false)   
+    if(next===resultCount[resultCount.length-1]){
         console.log("No More Next")
         setIsNext(true)
-        return
     }
      setStart(start + 9)
     setEnd(end + 9)
 }
 function getPrevious(){
     setNumber(number-1)
-    let previous=start-9
+    let previous=number-1
     setEnd(end-9)
     setStart(start-9)
     console.log(previous)
     console.log(start,end)
     setIsNext(false)
 
-    if(previous<=0){
-        console.log("NO MOre Previous")
+    if(previous===resultCount[0]){
         setIsPrev(true)
-        return
     }
     
 }
