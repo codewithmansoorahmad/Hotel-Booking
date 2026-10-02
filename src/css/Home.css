@@ -151,7 +151,12 @@
 .destination {
     border-radius: 12px;
     overflow: hidden;
+    transition: 0.25s ease;
     cursor: pointer;
+}
+.destination:hover{
+     transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 .destination img {
@@ -251,8 +256,14 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: 0.25s ease-in;
 }
 
+.hotel:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+
+}
 .hotel img {
     width: 100%;
     height: 190px;

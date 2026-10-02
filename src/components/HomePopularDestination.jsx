@@ -6,7 +6,7 @@ export default function HomePopularDestinations(){
     const navigate =useNavigate()
     let destiations=popularDestinations
     return <div className="home-destinations">
-        <div className="popular-info">
+        <div className="popular-info" >
             <div>
             <h1>Explore</h1>
             <h2>Popular Destinations</h2>
@@ -17,10 +17,10 @@ export default function HomePopularDestinations(){
 </div>
         </div>
 
-        <div className="destinations-grid">
+        <div className="destinations-grid" >
         {
             destiations.map((item,index)=>{
-return <div className="destination" key={index}>
+return <div className="destination" key={index} onClick={()=>navigate("hotels/"+item.id)}>
     <img src={item.image} alt="" />
     <p className="name">{item.name}</p>
     <p><MapPin size={14}/>{item.province}</p>
