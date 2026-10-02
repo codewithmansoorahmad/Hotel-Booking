@@ -79,6 +79,6 @@ let firstSLice=allHotels.slice(start,end)
         </div>
 
 
-<HotelsByPage number={number} setNumber={setNumber} allHotels={allHotels} setStart={setStart} setEnd={setEnd} start={start} end={end} />
+{allHotels.length>9 &&<HotelsByPage number={number} setNumber={setNumber} allHotels={allHotels} setStart={setStart} setEnd={setEnd} start={start} end={end} />}
     </div>
 } 

@@ -59,7 +59,7 @@ function getPrevious(){
 <button  className={isPrev?"btn block":"btn"} onClick={getPrevious} disabled={isPrev}><span ><ArrowLeft/></span> Previous</button>
 <div className="count">
 {
-    resultCount.map((item)=> <button onClick={(e)=>getByClick(item)} id={number}  className={number!==item?"page":"page num" } key={item}>{item}</button> )
+    resultCount.map((item)=> <button onClick={()=>getByClick(item)} id={number}  className={number!==item?"page":"page num" } key={item}>{item}</button> )
 
 }
 </div>
