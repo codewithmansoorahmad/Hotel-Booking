@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { hotels } from "../JS service/AllHotelsCode"
 import HotelsByPage from "./HotelsByPage"
-import { Heart, MapPin, Star } from "lucide-react"
+import { ArrowRight, Heart, MapPin, Star } from "lucide-react"
 
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
 const [start,setStart]=useState(0)
@@ -72,7 +72,7 @@ let firstSLice=allHotels.slice(start,end)
                     <p>{item.rating} <Star className="star"/></p>
                     <p>RS: {item.price}</p>
                     <p>{item.description}</p>
-                    <button>Book Hotel</button>
+                    <button>View Details <span><ArrowRight /></span></button>
                 </div>
             })
         }

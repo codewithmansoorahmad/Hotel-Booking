@@ -354,16 +354,26 @@
     margin: auto 18px 20px;
     padding: 12px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 9px;
     background: #111827;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+      background: #2563eb;
+  color: white;
+  border: 1px solid #2563eb;
+}
+.hotel-page button span{
+    margin-top: 2px;
 }
 
 .hotel-page button:hover {
-    background: #374151;
+    background: #1d4ed8;
+  border-color: #1d4ed8;
 }
 
 .hotels-by-page {
