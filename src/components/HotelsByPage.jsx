@@ -2,7 +2,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export default function HotelsByPage({allHotels,setStart,end,start,setEnd,number,setNumber}){
-    
+    let width=window.innerWidth
+    console.log(innerWidth)
     let count=allHotels.length/9
     let countRound=Math.ceil(count)
     let [isNext,setIsNext]=useState(false)
@@ -56,13 +57,13 @@ function getPrevious(){
         resultCount.push(i)
     }
     return <div className="hotels-by-page"  >
-<button  className={isPrev?"btn block":"btn"} onClick={getPrevious} disabled={isPrev}><span ><ArrowLeft/></span> Previous</button>
+<button  className={isPrev?"btn block":"btn"} onClick={getPrevious} disabled={isPrev}><span ><ArrowLeft/></span> {width>390 &&"Previous"}</button>
 <div className="count">
 {
     resultCount.map((item)=> <button onClick={()=>getByClick(item)} id={number}  className={number!==item?"page":"page num" } key={item}>{item}</button> )
 
 }
 </div>
-<button onClick={getNext} disabled={isNext}  className={isNext?"btn block":"btn"}>Next <span ><ArrowRight/></span> </button>
+<button onClick={getNext} disabled={isNext}  className={isNext?"btn block":"btn"}>{width>390 &&"Next"} <span ><ArrowRight/></span> </button>
     </div>
 }
