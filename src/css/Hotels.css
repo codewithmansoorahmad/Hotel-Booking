@@ -140,7 +140,9 @@
 
 }
 .hotels-by-page .block{
-    background-color: gray;
+    background: #f1f5f9;
+  color: #94a3b8;
+  border: 1px solid #e2e8f0;
     cursor: not-allowed;
 }
 .count {
@@ -165,8 +167,16 @@
     font-size: 14px;
     cursor: pointer;
 }
+.count .page:hover{
+    background: rgb(228, 222, 222);
+}
 .count .num{
-    background-color: red;
+      background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+.count .num:hover{
+     background: rgb(38, 38, 221);
 }
 
 
@@ -400,7 +410,6 @@
 .page:hover {
     background: #f3f4f6;
 }
-
 @media (max-width: 900px) {
     .hotels-grid {
         grid-template-columns: repeat(2, 1fr);
