@@ -74,7 +74,7 @@ let firstSLice=allHotels.slice(start,end)
                     <p>{item.rating} <Star className="star"/></p>
                     <p>RS: {item.price}</p>
                     <p>{item.description}</p>
-                    <button onClick={()=>{navigate(`hotel/${item.id}`)}}>View Details <span><ArrowRight /></span></button>
+                    <button onClick={()=>{navigate(`/hotel/${item.id}`)}}>View Details <span><ArrowRight /></span></button>
                 </div>
             })
         }

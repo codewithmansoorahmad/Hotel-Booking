@@ -1,5 +1,4 @@
 
-import "./css/App.css"
 import About from "./pages/About"
 import Destinations from "./pages/Destinations"
 import Header from "./pages/Header"
@@ -19,9 +18,9 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/destinations" element={<Destinations/>}/>
       <Route path="/hotels" element={<Hotels/>}/>
-      <Route path="/hotels/:id" element={<Hotels/>}/>
+      <Route path="/hotels/:destinationid" element={<Hotels/>}/>
       <Route path="/favorites" element={<Favorites/>}/>
-      <Route path="/hotel/:id" element={<HotelDetailsPage/>}/>
+      <Route path="/hotel/:hotelid" element={<HotelDetailsPage/>}/>
      </Route>
      </Routes>  
     </>

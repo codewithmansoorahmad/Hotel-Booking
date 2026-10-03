@@ -1,7 +1,9 @@
-import HotelDetailHead from "../components/.HotelDetailHead";
+import HotelDetailHead from "../components/HotelDetailHead";
 
-export default function HotelDetailsPage(){
-    return <div className="hotel-details-page">
+export default function HotelDetailsPage() {
+    return (
+       <div className="Hotels-Detail-page">
         <HotelDetailHead/>
-    </div>
+</div>
+    )
 }
