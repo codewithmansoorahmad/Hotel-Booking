@@ -1,4 +1,5 @@
 
+import "./css/App.css"
 import About from "./pages/About"
 import Destinations from "./pages/Destinations"
 import Header from "./pages/Header"
