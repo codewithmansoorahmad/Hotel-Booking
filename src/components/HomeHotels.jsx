@@ -1,11 +1,12 @@
 import {  Star } from "lucide-react"
 import { hotels } from "../JS service/AllHotelsCode"
+import { useNavigate } from "react-router-dom"
 
 export default function HomeHotels(){
 
     const popularRatedHotels=hotels.sort((a,b)=>b.rating-a.rating)
     const homeHotels=popularRatedHotels.slice(0,6)
-
+const navigate=useNavigate()
     return <div className="home-hotels">
 
         <h1>Highest Rated Hotels In StayFinder</h1>
@@ -13,7 +14,7 @@ export default function HomeHotels(){
 
         {
             homeHotels.map((hotel)=>{
-                return <div className="hotel" key={hotel.id}>
+                return <div className="hotel" key={hotel.id} onClick={()=>navigate("hotel/"+hotel.id)}>
                     <img src={hotel.image} alt="" />
                     <h1>{hotel.name}</h1>
                     <h2>Rating: {hotel.rating} <Star size={20} fill="yellow"  className="star"/></h2>

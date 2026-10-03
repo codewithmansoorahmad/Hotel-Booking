@@ -2,12 +2,14 @@ import { useEffect, useState } from "react"
 import { hotels } from "../JS service/AllHotelsCode"
 import HotelsByPage from "./HotelsByPage"
 import { ArrowRight, Heart, MapPin, Star } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
 const [start,setStart]=useState(0)
 const [end,setEnd]=useState(9)
 const [allHotels,setAllHotels]=useState(hotels)
     let [number,setNumber]=useState(1)
+    const navigate=useNavigate()
 
 function getHotels(){
     let result=hotels
@@ -72,7 +74,7 @@ let firstSLice=allHotels.slice(start,end)
                     <p>{item.rating} <Star className="star"/></p>
                     <p>RS: {item.price}</p>
                     <p>{item.description}</p>
-                    <button>View Details <span><ArrowRight /></span></button>
+                    <button onClick={()=>{navigate(`hotel/${item.id}`)}}>View Details <span><ArrowRight /></span></button>
                 </div>
             })
         }
