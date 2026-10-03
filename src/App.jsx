@@ -8,6 +8,7 @@ import { Routes,Route } from "react-router-dom"
 import Hotels from "./pages/Hotels"
 import Favorites from "./pages/Favorites"
 import Footer from "./pages/Footer"
+import HotelDetailsPage from "./pages/HotelsDetailPage"
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/hotels" element={<Hotels/>}/>
       <Route path="/hotels/:id" element={<Hotels/>}/>
       <Route path="/favorites" element={<Favorites/>}/>
+      <Route path="/hotel/:id" element={<HotelDetailsPage/>}/>
      </Route>
      </Routes>  
     </>
