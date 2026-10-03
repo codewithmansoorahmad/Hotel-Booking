@@ -1,0 +1,87 @@
+.Hotel-detail-head {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px 20px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-btn span {
+    display: flex;
+    align-items: center;
+}
+
+.back-btn svg {
+    width: 19px;
+    height: 19px;
+}
+
+.Hotel-detail-head h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hotel-ratings {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+.hotel-ratings p {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.hotel-ratings p:first-child span {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.hotel-ratings svg {
+    width: 17px;
+    height: 17px;
+    fill: yellow;
+}
+
+.hotel-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #555;
+    font-size: 15px;
+}
+
+.hotel-location p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.hotel-location span {
+    display: flex;
+    align-items: center;
+}
+
+.hotel-location svg {
+    width: 17px;
+    height: 17px;
+}

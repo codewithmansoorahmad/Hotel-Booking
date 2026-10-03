@@ -11,7 +11,7 @@ export default function HotelDetailHead(){
 
    return <div className="Hotel-detail-head">
 
-    <button className="back-btn" onClick={()=>navigate}><span><ArrowLeft/></span>Back</button>
+    <button className="back-btn" onClick={()=>navigate(-1)}><span><ArrowLeft/></span>Back</button>
 <h1>{hotelDetails.name}</h1>
 <div className="hotel-ratings">
     <p><span><Star/><Star/><Star/><Star/><Star/></span>{hotelDetails.rating}</p>
