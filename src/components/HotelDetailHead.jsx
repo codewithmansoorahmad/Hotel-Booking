@@ -1,13 +1,9 @@
 import { ArrowLeft, MapPin, Star } from "lucide-react";
-import { useNavigate, useParams } from "react-router-dom";
-import { hotels } from "../JS service/AllHotelsCode";
+import { useNavigate, } from "react-router-dom";
 
-export default function HotelDetailHead(){
-    const {hotelid}=useParams()
-    console.log(hotelid)
-    const hotelDetails=hotels.find((item)=>item.id===Number(hotelid))
-    console.log(hotelDetails)
+export default function HotelDetailHead({hotelDetails}){
     const navigate=useNavigate()
+ 
 
    return <div className="Hotel-detail-head">
 
@@ -15,7 +11,7 @@ export default function HotelDetailHead(){
 <h1>{hotelDetails.name}</h1>
 <div className="hotel-ratings">
     <p><span><Star/><Star/><Star/><Star/><Star/></span>{hotelDetails.rating}</p>
-    <p>{hotelDetails.reviews}</p>
+    <p>{hotelDetails.reviews} reviews</p>
 </div>
     <div className="hotel-location">
         <p><span><MapPin/></span> {hotelDetails.destination},</p>
