@@ -1,5 +1,6 @@
 
 import "./css/App.css"
+import "./css/Tailwind.css"
 import About from "./pages/About"
 import Destinations from "./pages/Destinations"
 import Header from "./pages/Header"
@@ -7,9 +8,8 @@ import Home from "./pages/Home"
 import { Routes,Route } from "react-router-dom"
 import Hotels from "./pages/Hotels"
 import Favorites from "./pages/Favorites"
-import Footer from "./pages/Footer"
 import HotelDetailsPage from "./pages/HotelsDetailPage"
-import BookNow from "./components/BookNow"
+import BookNow from "./pages/BookNow"
 function App() {
 
   return (

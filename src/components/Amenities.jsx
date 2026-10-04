@@ -34,7 +34,7 @@ export default function Amenities({hoteldetails}){
                 <p>CheckIn: {hoteldetails.checkIn}</p>
                 <p>CheckOut: {hoteldetails.checkOut}</p>
 
-                <button onClick={()=>{navigate("/hotel/git comm"+hoteldetails.id+"/booking")}}>Book Now</button>
+                <button onClick={()=>{navigate("/hotel/"+hoteldetails.id+"/booking")}}>Book Now</button>
 
 
         </div>
