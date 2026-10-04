@@ -1,17 +1,25 @@
+import { useState } from "react"
+
 export default function ImageCursor({hotelDetails}){
- return   <div className="image-cursor">
+
+    const [url,setUrl]=useState(hotelDetails.image)
+ return <div className="images-page">
+    <h1>{hotelDetails.name} Images</h1>
+ 
+   <div className="image-cursor">
     <div className="main-image">
-        <img src={hotelDetails.image} alt="" />
+        <img src={url} alt="" />
 
     </div>
     <div className="images">
         {
             hotelDetails.images.map((item,index)=>{
              return   index==0?null:
-                 <img src={item} alt="" key={index} />
+                 <img src={item} alt="" key={index} onClick={()=>setUrl(item)} />
             })
         }
     </div>
 
+    </div>
     </div>
 }
