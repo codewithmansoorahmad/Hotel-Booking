@@ -1,6 +1,8 @@
 import { CheckIcon, Star } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 export default function Amenities({hoteldetails}){
+    const navigate=useNavigate()
     return <div className="amenities">
         <div className="about-hotel">
             <h1>About Hotel</h1>
@@ -32,7 +34,7 @@ export default function Amenities({hoteldetails}){
                 <p>CheckIn: {hoteldetails.checkIn}</p>
                 <p>CheckOut: {hoteldetails.checkOut}</p>
 
-                <button>Book Now</button>
+                <button onClick={()=>{navigate("/hotel/"+hoteldetails.id+"/booking")}}>Book Now</button>
 
 
         </div>
