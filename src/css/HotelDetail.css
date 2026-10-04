@@ -198,3 +198,155 @@
         flex-shrink: 0;
     }
 }
+
+.amenities {
+    width: 100%;
+    max-width: 1200px;
+    margin: 35px auto 0;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-hotel {
+    grid-column: 1 / -1;
+}
+
+.about-hotel h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.about-hotel p {
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.hotel-amenities,
+.hotel-services,
+.information {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 22px;
+    min-height: 250px;
+}
+
+.hotel-amenities,
+.hotel-services,
+.information {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    gap: 12px;
+}
+
+.hotel-amenities h1,
+.hotel-services h1 ,
+.information h1{
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0 0 5px;
+}
+
+.hotel-amenities p,
+.hotel-services p {
+    margin: 0;
+}
+
+.hotel-amenities p span,
+.hotel-services p span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.check-icon {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+.information p {
+    margin: 0 0 18px;
+}
+
+.information p:first-of-type {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.information p span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555;
+}
+
+.information svg {
+    width: 18px;
+    height: 18px;
+    fill: #f5c400;
+}
+
+.information button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .amenities {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .information {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 550px) {
+    .amenities {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .about-hotel {
+        grid-column: auto;
+    }
+
+    .information {
+        grid-column: auto;
+    }
+
+    .hotel-amenities,
+    .hotel-services,
+    .information {
+        min-height: auto;
+    }
+
+    .information img {
+        height: 180px;
+    }
+}
