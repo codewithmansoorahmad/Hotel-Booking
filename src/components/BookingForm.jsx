@@ -1,7 +1,7 @@
 export default function BookingForm({number,setNumber,email,setEmail,name,setName}){
 
-    return <div className="border-2 w-60 px-6 py-4  ">
-        <h1 >Guest Information</h1>
+    return <div className=" w-full px-6 py-4  ">
+        <h1 className="my-2">Guest Information</h1>
         <div className="flex flex-col ">
 
         <label htmlFor="name">Full Name</label>

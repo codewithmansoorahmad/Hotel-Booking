@@ -1,1 +1,7 @@
-@import "tailwindcss"
+@import "tailwindcss";
+@utility input{
+    @apply border  rounded-xs px-3 my-1
+}
+@theme{
+    --breakpoint-500:500px
+}
