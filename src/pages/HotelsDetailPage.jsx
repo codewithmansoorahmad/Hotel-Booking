@@ -4,13 +4,16 @@ import "../css/HotelDetail.css"
 import { hotels } from "../JS service/AllHotelsCode";
 import ImageCursor from "../components/ImageCursor";
 import Amenities from "../components/Amenities";
+import ScrollToTop from "../components/ScrollToTop";
 export default function HotelDetailsPage() {
        const {hotelid}=useParams()
     console.log(hotelid)
     const hotelDetails=hotels.find((item)=>item.id===Number(hotelid))
     console.log(hotelDetails)
     return (
+
        <div className="Hotels-Detail-page">
+        <ScrollToTop/>
         <HotelDetailHead hotelDetails={hotelDetails}/>
         <ImageCursor hotelDetails={hotelDetails}/>
         <Amenities hoteldetails={hotelDetails}/>

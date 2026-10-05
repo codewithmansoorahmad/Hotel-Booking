@@ -4,6 +4,7 @@ import { hotels } from "../JS service/AllHotelsCode"
 import { useState } from "react"
 import BookingCheck from "../components/BookingCheck"
 import PaymentMethod from "../components/PaymentMethod"
+import ScrollToTop from "../components/ScrollToTop"
 export default function BookNow(){
     const {hotelid}=useParams()
 
@@ -23,6 +24,7 @@ export default function BookNow(){
        
     return <div className="container mx-auto w-full box-border bg-slate-50 border border-slate-200 shadow-sm ">
         <button></button>
+        <ScrollToTop/>
 
         <BookingCheck hotelDetails={hotelDetails} checkInDate={checkInDate} setCheckInDate={setCheckInDate} checkOutDate={checkOutDate} setCheckOutDate={setCheckOutDate} />
         <BookingForm number={number} room={room} setRoom={setRoom} setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail} />

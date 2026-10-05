@@ -12,9 +12,7 @@ export default function BookingCheck({
 }) {
   const roomTypes = hotelDetails.roomTypes;
   const check = new Date(checkInDate);
-  const out = new Date(checkOutDate);
   const [error,setError]=useState("")
-  
 
   return (
     <div className="w-full py-4 px-6 box-border flex flex-col gap-2">
