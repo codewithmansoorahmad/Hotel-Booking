@@ -1,14 +1,13 @@
-export default function BookingCheck({hotelDetails}){
+export default function BookingCheck({hotelDetails,checkInDate,setCheckInDate}){
     const roomTypes=hotelDetails.roomTypes
-    console.log(roomTypes)
-    return <div className="w-full py-4 px-6 box-border flex flex-col gap-2">
-        <h1 className="my-4">Stay Details</h1>
 
+    return <div className="w-full py-4 px-6 box-border flex flex-col gap-2">
+        <h1 className="my-4 text-xl border-b border-b-black">Stay Details</h1>
         <div className="flex flex-col gap-1 ">
             <div className="flex flex-col">
 
             <label htmlFor="date" >Check In:</label>
-            <input type="date"  id="date" className="border w-full text-1xl my-1 rounded-sm 500:" />
+            <input type="date" value={checkInDate} onChange={(e)=>setCheckInDate(e.target.value)} id="date" className="border w-full text-1xl my-1 rounded-sm 500:" />
             </div>
 <div className="flex flex-col">
             <label htmlFor="date-2" >Check Out:</label>
