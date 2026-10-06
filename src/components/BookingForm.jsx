@@ -58,6 +58,7 @@ export default function BookingForm({
           value={number}
           ref={phoneRef}
           min={2}
+          
           onChange={(e) => {setNumber(e.target.value)
                  if(!e.target.checkValidity()){
                         console.log("wrong")
@@ -74,6 +75,7 @@ export default function BookingForm({
           placeholder="Special Request"
           className="border rounded-xs my-1 px-3"
           id="request"
+
           ref={reqRef}
         />
       </div>

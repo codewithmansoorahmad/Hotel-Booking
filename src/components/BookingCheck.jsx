@@ -13,6 +13,7 @@ export default function BookingCheck({
   roomRef,
   checkInRef,
   CheckOutRef,
+  todayDate
 }) {
   const roomTypes = hotelDetails.roomTypes;
   const check = new Date(checkInDate);
@@ -34,6 +35,8 @@ export default function BookingCheck({
             type="date"
             ref={checkInRef}
             value={checkInDate}
+            min={todayDate}
+            
             onChange={(e) => {
                 setCheckInDate(e.target.value);
                 if(new Date(e.target.value)>=out){
@@ -52,7 +55,7 @@ export default function BookingCheck({
                  
             }}
             id="date"
-            className="border w-full text-1xl my-1 rounded-sm 500:"
+            className="border w-full text-1xl my-1 cursor-pointer rounded-sm 500:"
           />
         </div>
         <div className="flex flex-col">
@@ -60,7 +63,8 @@ export default function BookingCheck({
           <input
             type="date"
             id="date-2"
-
+            required
+min={todayDate}
             value={checkOutDate}
             ref={CheckOutRef}
 
@@ -78,7 +82,7 @@ export default function BookingCheck({
                     setError("")
                 }
             }}
-            className="border w-full text-1xl my-1 rounded-sm"
+            className="border w-full text-1xl my-1 cursor-pointer rounded-sm"
           />
         </div>
         {
@@ -92,6 +96,7 @@ export default function BookingCheck({
           id="select"
           value={room}
           ref={roomRef}
+
           onChange={(e)=>setRoom(e.target.value)}
           className=" my-1 cursor-pointer border text-[16px] flex items-center w-full  rounded-md px-2 py-2"
         >

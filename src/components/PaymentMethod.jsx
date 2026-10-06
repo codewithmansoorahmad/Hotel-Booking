@@ -9,7 +9,7 @@ export default function PaymentMethod({  setPaymentMethod,paymentRef
       <label htmlFor="cash"> Cash On Delivery</label>
       </div>
       <div className="border-2 rounded-md flex gap-2 items-center border-slate-200 py-6 px-3">
-      <input type="radio" name="payment" id="online" value="online"  onChange={(e)=>{setPaymentMethod(e.target.value)}} required/>
+      <input type="radio" name="payment" id="online" value="online"  onChange={(e)=>{setPaymentMethod(e.target.value)}} />
       <label htmlFor="online">Online Payment With EasyPaisa </label>
     </div>
     </div>
