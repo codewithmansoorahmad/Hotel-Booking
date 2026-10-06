@@ -17,7 +17,7 @@ export default function ImageCursor({hotelDetails}){
     <div className="images">
         {
             hotelDetails.images.map((item,index)=>{
-             return    <img src={item} alt="" key={index} onClick={()=>setUrl(item)} />
+             return    <img src={item} alt="" key={index} onClick={()=>setUrl(item)} className={item==url?"focus":"null"} />
             })
         }
     </div>

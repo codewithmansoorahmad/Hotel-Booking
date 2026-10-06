@@ -139,6 +139,9 @@
     width: 21px;
     height: 21px;
 }
+.focus{
+    border: 2px solid rgb(93, 193, 233);
+}
 
 .images {
     width: 100px;
