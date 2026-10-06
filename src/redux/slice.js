@@ -13,5 +13,5 @@ const favoriteHotels=createSlice({
        
     }
 })
-export default favoriteHotels.reducer
 export const {addToFavorite}=favoriteHotels.actions
+export default favoriteHotels.reducer
