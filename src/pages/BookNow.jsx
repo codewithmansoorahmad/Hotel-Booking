@@ -7,6 +7,7 @@ import PaymentMethod from "../components/PaymentMethod"
 import ScrollToTop from "../components/ScrollToTop"
 import BookingSummary from "../components/BookingSummary"
 import { ArrowLeft } from "lucide-react"
+import BookBtn from "./BookButton"
 export default function BookNow(){
     const {hotelid}=useParams()
 
@@ -32,14 +33,10 @@ export default function BookNow(){
         <h1>Book Your Stay</h1>
         <h2>Complete Your Booking</h2>
         </div>
-<div className="flex " >
 
         <BookingCheck hotelDetails={hotelDetails} checkInDate={checkInDate} setCheckInDate={setCheckInDate} checkOutDate={checkOutDate} setCheckOutDate={setCheckOutDate} name={name} room={room} setRoom={setRoom} />
-<div>
         <BookingForm number={number}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
         <PaymentMethod paymentMethod={PaymentMethod} setPaymentMethod={setPaymentMethod}/>
-        </div>
-</div>
-   
+<BookBtn/>
     </div>
 }

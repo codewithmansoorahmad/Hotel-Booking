@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 export default function BookingForm({
   number,
   setNumber,
@@ -6,6 +8,9 @@ export default function BookingForm({
   name,
   setName,
 }) {
+  const nameRef=useRef()
+  const emailRef=useRef()
+  const phoneRef=useRef()
   return (
     <div className=" w-full px-6 py-4  ">
       <h1 className="my-4 text-xl border-b border-b-black">
@@ -19,6 +24,8 @@ export default function BookingForm({
           id="name"
           className="input"
           value={name}
+          ref={nameRef}
+       
           onChange={(e) => {setName(e.target.value)
                 if(!e.target.checkValidity()){
                         console.log("wrong")
@@ -33,6 +40,7 @@ export default function BookingForm({
           className="input"
           id="email"
           value={email}
+          ref={emailRef}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
