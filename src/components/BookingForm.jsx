@@ -29,7 +29,17 @@ export default function BookingForm({
           className="input"
           value={name}
           ref={nameRef}
+       onKeyDown={(e)=>{
        
+        if(e.key==="Enter"){
+           if(name.trim()===""){
+          nameRef.current.reportValidity()
+          return
+        }
+          emailRef.current.focus()
+        }
+
+       }}
           onChange={(e) => {setName(e.target.value)
                 if(!e.target.checkValidity()){
                         console.log("wrong")
@@ -45,20 +55,39 @@ export default function BookingForm({
           id="email"
           value={email}
           ref={emailRef}
+             onKeyDown={(e)=>{
+       
+        if(e.key==="Enter"){
+           if(email.trim()===""){
+          emailRef.current.reportValidity()
+          return
+        }
+          phoneRef.current.focus()
+        }
+
+       }}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <label htmlFor="number">Phone</label>
         <input
-          type="number"
-          placeholder="phone"
-          minLength={10}
+          type="tel"
+          placeholder="03XXXXXXXXX"
+          minLength={11}
           id="number"
           className="input"
           value={number}
           ref={phoneRef}
-          min={2}
-          
+               onKeyDown={(e)=>{
+        if(e.key==="Enter"){
+           if(number.trim()===""){
+          phoneRef.current.reportValidity()
+          return
+        }
+          reqRef.current.focus()
+        }
+
+       }}
           onChange={(e) => {setNumber(e.target.value)
                  if(!e.target.checkValidity()){
                         console.log("wrong")

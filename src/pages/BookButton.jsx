@@ -19,27 +19,20 @@ export default function BookBtn({
 }) {
     function getBooking(){
 if(!nameRef.current.checkValidity()){
-    // nameRef.current.setCustomValidity("Enter Full Name")
     nameRef.current.reportValidity()
+    return
 }
 if(!emailRef.current.checkValidity()){
-    // emailRef.current.setCustomValidity("Enter Your Gmail Id")
     emailRef.current.reportValidity()
+    return
 }
 if(!phoneRef.current.checkValidity()){
-    // phoneRef.current.setCustomValidity("Enter valid Phone Number ")
     phoneRef.current.reportValidity()
+    return
 }
 if(!paymentRef.current.checkValidity()){
-    // paymentRef.current.setCustomValidity("Selcct One Payment method ")
     paymentRef.current.reportValidity()
 }
-    // paymentRef.current.setCustomValidity("")
-    // emailRef.current.setCustomValidity("")
-    // nameRef.current.setCustomValidity("")
-
-    // phoneRef.current.setCustomValidity(" ")
-
 
     }
   return <div>
