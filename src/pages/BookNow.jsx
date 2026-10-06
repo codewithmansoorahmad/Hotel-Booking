@@ -37,7 +37,7 @@ export default function BookNow(){
    const navigate=useNavigate()
        
     return <div className="container  mx-auto w-full box-border bg-slate-50 border border-slate-200 shadow-sm sm:w-3/4 lg:1/2  ">
-        <button onClick={()=>navigate(-1)} className="flex items-center gap-1 mx-4 m2-1 cursor-pointer bg-white w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
+        <button onClick={()=>navigate(-1)} className="flex items-center gap-1 mx-4 my-2 cursor-pointer  bg-gray-100 w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
         <ScrollToTop/>
         <div className="flex gap-1 justify-center items-center mt-1 flex-col">
         <h1>Book Your Stay</h1>
