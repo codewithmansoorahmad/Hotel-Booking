@@ -3,5 +3,6 @@
     @apply border  rounded-xs px-3 my-1
 }
 @theme{
-    --breakpoint-500:500px
+    --breakpoint-500:500px;
+    --breakpoint-400:400px
 }

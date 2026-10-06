@@ -35,7 +35,7 @@ if(!paymentRef.current.checkValidity()){
 }
 
     }
-  return <div>
-<button className="bg-slate-700 text-white px-3 py-2 " onClick={getBooking}>Book</button>
+  return <div className="w-full 400:flex justify-end px-5 py-2">
+<button className="bg-slate-700 text-white px-5 py-2 rounded-md  cursor-pointer w-full hover:bg-slate-800 400:w-32 "  onClick={getBooking}>Book Now</button>
   </div>;
 }
