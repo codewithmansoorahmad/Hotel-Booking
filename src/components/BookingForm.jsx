@@ -7,6 +7,8 @@ export default function BookingForm({
   setEmail,
   name,
   setName,
+  specailReq,
+  setSpecailReq
 }) {
   const nameRef=useRef()
   const emailRef=useRef()
@@ -62,7 +64,10 @@ export default function BookingForm({
         />
         <label htmlFor="email">Special Request</label>
         <textarea
+
           type="text"
+          value={specailReq}
+          onChange={(e)=>{setSpecailReq(e.target.value)}}
           placeholder="Special Request"
           className="border rounded-xs my-1 px-3"
           id="request"

@@ -23,7 +23,9 @@ export default function BookNow(){
     const [room,setRoom]=useState(hotelDetails.roomTypes[0].name)
     const [checkInDate,setCheckInDate]=useState(todayDate)
     const [checkOutDate,setCheckOutDate]=useState(tomorrowDate)
-    const [paymentMethod,setPaymentMethod]=useState("")
+    const [paymentMethod,setPaymentMethod]=useState("");
+    const [specailReq,setSpecailReq]=useState("");
+
    const navigate=useNavigate()
        
     return <div className="container mx-auto w-full box-border bg-slate-50 border border-slate-200 shadow-sm ">
@@ -35,8 +37,8 @@ export default function BookNow(){
         </div>
 
         <BookingCheck hotelDetails={hotelDetails} checkInDate={checkInDate} setCheckInDate={setCheckInDate} checkOutDate={checkOutDate} setCheckOutDate={setCheckOutDate} name={name} room={room} setRoom={setRoom} />
-        <BookingForm number={number}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
-        <PaymentMethod paymentMethod={PaymentMethod} setPaymentMethod={setPaymentMethod}/>
-<BookBtn/>
+        <BookingForm number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
+        <PaymentMethod paymentMethod={paymentMethod} setPaymentMethod={setPaymentMethod}/>
+<BookBtn number={number} hotelDetails={hotelDetails} checkInDate={checkInDate}  paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} />
     </div>
 }
