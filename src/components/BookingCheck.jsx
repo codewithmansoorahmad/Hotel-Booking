@@ -9,7 +9,10 @@ export default function BookingCheck({
   checkOutDate,
   setCheckOutDate,
   room,
-  setRoom
+  setRoom,
+  roomRef,
+  checkInRef,
+  CheckOutRef,
 }) {
   const roomTypes = hotelDetails.roomTypes;
   const check = new Date(checkInDate);
@@ -29,12 +32,13 @@ export default function BookingCheck({
           <input
 
             type="date"
+            ref={checkInRef}
             value={checkInDate}
             onChange={(e) => {
                 setCheckInDate(e.target.value);
                 if(new Date(e.target.value)>=out){
-                  ref.current.setCustomValidity("select chekOut Date date must after checkIn date")
-                  ref.current.reportValidity()
+                  CheckOutRef.current.setCustomValidity("select chekOut Date date must after checkIn date")
+                  CheckOutRef.current.reportValidity()
                   console.log("boss")
                 }
                  if(new Date(e.target.value)<=check){
@@ -56,8 +60,9 @@ export default function BookingCheck({
           <input
             type="date"
             id="date-2"
+
             value={checkOutDate}
-            ref={ref}
+            ref={CheckOutRef}
 
             onChange={(e) => {
 
@@ -86,6 +91,7 @@ export default function BookingCheck({
         <select
           id="select"
           value={room}
+          ref={roomRef}
           onChange={(e)=>setRoom(e.target.value)}
           className=" my-1 cursor-pointer border text-[16px] flex items-center w-full  rounded-md px-2 py-2"
         >

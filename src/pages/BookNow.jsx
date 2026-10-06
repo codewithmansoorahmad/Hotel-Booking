@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom"
 import BookingForm from "../components/BookingForm"
 import { hotels } from "../JS service/AllHotelsCode"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import BookingCheck from "../components/BookingCheck"
 import PaymentMethod from "../components/PaymentMethod"
 import ScrollToTop from "../components/ScrollToTop"
@@ -25,6 +25,14 @@ export default function BookNow(){
     const [checkOutDate,setCheckOutDate]=useState(tomorrowDate)
     const [paymentMethod,setPaymentMethod]=useState("");
     const [specailReq,setSpecailReq]=useState("");
+    const nameRef=useRef()
+    const emailRef=useRef()
+    const phoneRef=useRef()
+    const checkInRef=useRef()
+    const checkOutRef=useRef()
+    const paymentRef=useRef()
+    const reqRef=useRef()
+    const roomRef=useRef()
 
    const navigate=useNavigate()
        
@@ -36,9 +44,9 @@ export default function BookNow(){
         <h2>Complete Your Booking</h2>
         </div>
 
-        <BookingCheck hotelDetails={hotelDetails} checkInDate={checkInDate} setCheckInDate={setCheckInDate} checkOutDate={checkOutDate} setCheckOutDate={setCheckOutDate} name={name} room={room} setRoom={setRoom} />
-        <BookingForm number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
-        <PaymentMethod paymentMethod={paymentMethod} setPaymentMethod={setPaymentMethod}/>
-<BookBtn number={number} hotelDetails={hotelDetails} checkInDate={checkInDate}  paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} />
+        <BookingCheck hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef} checkInDate={checkInDate} setCheckInDate={setCheckInDate} checkOutDate={checkOutDate} setCheckOutDate={setCheckOutDate} name={name} room={room} setRoom={setRoom} roomRef={roomRef}  />
+        <BookingForm nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
+        <PaymentMethod paymentMethod={paymentMethod} paymentRef={paymentRef} setPaymentMethod={setPaymentMethod}/>
+<BookBtn nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef}  checkInDate={checkInDate} paymentRef={paymentRef} roomRef={roomRef} paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} />
     </div>
 }

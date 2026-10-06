@@ -8,11 +8,13 @@ export default function BookingForm({
   name,
   setName,
   specailReq,
-  setSpecailReq
+  setSpecailReq,
+  nameRef,
+  phoneRef,
+  emailRef,
+  reqRef
 }) {
-  const nameRef=useRef()
-  const emailRef=useRef()
-  const phoneRef=useRef()
+ 
   return (
     <div className=" w-full px-6 py-4  ">
       <h1 className="my-4 text-xl border-b border-b-black">
@@ -54,6 +56,7 @@ export default function BookingForm({
           id="number"
           className="input"
           value={number}
+          ref={phoneRef}
           min={2}
           onChange={(e) => {setNumber(e.target.value)
                  if(!e.target.checkValidity()){
@@ -71,6 +74,7 @@ export default function BookingForm({
           placeholder="Special Request"
           className="border rounded-xs my-1 px-3"
           id="request"
+          ref={reqRef}
         />
       </div>
     </div>
