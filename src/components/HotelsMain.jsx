@@ -3,7 +3,7 @@ import { hotels } from "../JS service/AllHotelsCode"
 import HotelsByPage from "./HotelsByPage"
 import { ArrowRight, Heart, MapPin, Star } from "lucide-react"
 import { useNavigate } from "react-router-dom"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { addToFavorite } from "../redux/Slice"
 
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
@@ -13,7 +13,8 @@ const [allHotels,setAllHotels]=useState(hotels)
     let [number,setNumber]=useState(1)
     const navigate=useNavigate()
     const dispatch=useDispatch()
-
+ const favoriteHotels=useSelector((state)=>state.favorite.hotels)
+    console.log(favoriteHotels)
 function getHotels(){
     let result=hotels
        if(allProvinces!=="All"){
