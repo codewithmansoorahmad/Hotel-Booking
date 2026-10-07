@@ -268,7 +268,7 @@
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
-.hotel-page > span {
+.hotel-page > .span {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -283,7 +283,7 @@
     cursor: pointer;
 }
 
-.hotel-page > span svg {
+.hotel-page > .span svg {
     width: 20px;
     height: 20px;
 }
@@ -349,7 +349,7 @@
     margin-bottom: 20px;
 }
 
-.hotel-page button {
+.hotel-page .click {
     width: calc(100% - 36px);
     margin: auto 18px 20px;
     padding: 12px;
@@ -367,11 +367,11 @@
   color: white;
   border: 1px solid #2563eb;
 }
-.hotel-page button span{
+.hotel-page .click span{
     margin-top: 2px;
 }
 
-.hotel-page button:hover {
+.hotel-page .click:hover {
     background: #1d4ed8;
   border-color: #1d4ed8;
 }
@@ -384,7 +384,7 @@
     margin-top: 45px;
 }
 
-.hotels-by-page > button {
+.hotels-by-page > .click {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -397,7 +397,7 @@
     cursor: pointer;
 }
 
-.hotels-by-page > button svg {
+.hotels-by-page > .click svg {
     width: 17px;
     height: 17px;
 }
@@ -460,7 +460,7 @@
         margin-top: 35px;
     }
 
-    .hotels-by-page > button {
+    .hotels-by-page > .click {
         padding: 9px 11px;
         font-size: 13px;
     }

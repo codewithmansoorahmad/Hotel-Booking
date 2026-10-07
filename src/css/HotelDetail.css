@@ -120,7 +120,7 @@
     display: block;
 }
 
-.main-image span {
+.main-image button {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -135,7 +135,7 @@
     cursor: pointer;
 }
 
-.main-image span svg {
+.main-image button svg {
     width: 21px;
     height: 21px;
 }

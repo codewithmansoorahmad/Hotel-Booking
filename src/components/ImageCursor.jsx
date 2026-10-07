@@ -1,8 +1,10 @@
 import { Heart } from "lucide-react"
 import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { addToFavorite } from "../redux/Slice"
 
 export default function ImageCursor({hotelDetails}){
-
+const dispatch=useDispatch()
     const [url,setUrl]=useState(hotelDetails.image)
  return <div className="images-page">
     <h1>{hotelDetails.name} Images</h1>
@@ -10,7 +12,7 @@ export default function ImageCursor({hotelDetails}){
    <div className="image-cursor">
 
     <div className="main-image">
-        <span><Heart  className="heart" /></span>
+       <button onClick={()=>dispatch(addToFavorite(hotelDetails))}> <Heart  className="heart" /></button>
 
         <img src={url} alt="" />
     </div>

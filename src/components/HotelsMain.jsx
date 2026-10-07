@@ -3,6 +3,8 @@ import { hotels } from "../JS service/AllHotelsCode"
 import HotelsByPage from "./HotelsByPage"
 import { ArrowRight, Heart, MapPin, Star } from "lucide-react"
 import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { addToFavorite } from "../redux/Slice"
 
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
 const [start,setStart]=useState(0)
@@ -10,6 +12,7 @@ const [end,setEnd]=useState(9)
 const [allHotels,setAllHotels]=useState(hotels)
     let [number,setNumber]=useState(1)
     const navigate=useNavigate()
+    const dispatch=useDispatch()
 
 function getHotels(){
     let result=hotels
@@ -66,7 +69,7 @@ let firstSLice=allHotels.slice(start,end)
         {
             firstSLice.map((item)=>{
                 return <div className="hotel-page" key={item.id}>
-                    <span><Heart/></span>
+                    <button className="span" onClick={()=>dispatch(addToFavorite(item))}><Heart /></button>
                     <img src={item.image} width="300px" height="300px" alt="" />
                     <h1>{item.name}</h1>
                     <h2>{item.destination}</h2>
@@ -74,7 +77,7 @@ let firstSLice=allHotels.slice(start,end)
                     <p>{item.rating} <Star className="star"/></p>
                     <p>RS: {item.price}</p>
                     <p>{item.description}</p>
-                    <button onClick={()=>{navigate(`/hotel/${item.id}`)}}>View Details <span><ArrowRight /></span></button>
+                    <button className="click" onClick={()=>{navigate(`/hotel/${item.id}`)}}>View Details <span><ArrowRight /></span></button>
                 </div>
             })
         }
