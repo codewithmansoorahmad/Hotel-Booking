@@ -1,3 +1,5 @@
 export default function FavoritesData(){
-    return 
+    return <div>
+        
+    </div>
 }
