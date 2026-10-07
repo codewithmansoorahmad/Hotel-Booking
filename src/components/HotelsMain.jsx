@@ -4,7 +4,7 @@ import HotelsByPage from "./HotelsByPage"
 import { ArrowRight, Heart, MapPin, Star } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
-import { addToFavorite } from "../redux/Slice"
+import { addToFavorite, removeFromFavorites } from "../redux/Slice"
 
 export default function HotelsMain({ price, sorting, destination,  allProvinces}){
 const [start,setStart]=useState(0)
@@ -14,7 +14,22 @@ const [allHotels,setAllHotels]=useState(hotels)
     const navigate=useNavigate()
     const dispatch=useDispatch()
  const favoriteHotels=useSelector((state)=>state.favorite.hotels)
-    console.log(favoriteHotels)
+
+ function checkHotels(hotel){
+    let findHotel=favoriteHotels.find((item)=>item.id===hotel.id)
+    if(!findHotel){
+        dispatch(addToFavorite(hotel))
+    }
+    else{
+        dispatch(removeFromFavorites(hotel))
+
+    }
+ }
+
+
+
+
+
 function getHotels(){
     let result=hotels
        if(allProvinces!=="All"){
@@ -62,7 +77,7 @@ getHotels()
     setEnd(9)
 
 },[price, sorting, destination,  allProvinces])
-
+console.log(favoriteHotels)
 let firstSLice=allHotels.slice(start,end)
     return <div className="hotels-Main">
 <h1>{allHotels.length} Hotels Available </h1>
@@ -70,7 +85,7 @@ let firstSLice=allHotels.slice(start,end)
         {
             firstSLice.map((item)=>{
                 return <div className="hotel-page" key={item.id}>
-                    <button className="span" onClick={()=>dispatch(addToFavorite(item))}><Heart /></button>
+                    <button className="span" onClick={()=>checkHotels(item)}><Heart /></button>
                     <img src={item.image} width="300px" height="300px" alt="" />
                     <h1>{item.name}</h1>
                     <h2>{item.destination}</h2>
