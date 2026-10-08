@@ -22,7 +22,7 @@ export default function HotelsMain({
   const favoriteHotels = useSelector((state) => state.favorite.hotels);
 
   function getHotels() {
-    let result = hotels;
+    let result = [...hotels];
     if (allProvinces !== "All") {
       const provincesHotels = result.filter(
         (item) => item.province.toLowerCase() === allProvinces.toLowerCase(),
@@ -50,10 +50,10 @@ export default function HotelsMain({
     if (sorting === "rating-high") {
       result.sort((a, b) => b.rating - a.rating);
     }
-    if (sorting === "lowest-price") {
+    if (sorting === "highest-price") {
       result.sort((a, b) => a.price - b.price);
     }
-    if (sorting === "highest-price") {
+    if (sorting === "lowest-price") {
       result.sort((a, b) => b.price - a.price);
     }
     setAllHotels(result);
