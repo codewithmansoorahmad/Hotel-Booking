@@ -2,11 +2,12 @@ import { Heart, MapPin, Star } from "lucide-react"
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import {removeFromFavorites} from "../redux/Slice"
-export default function FavoritesData(){
-    const favoriteHotels=useSelector((state)=>state.favorite.hotels)
+export default function FavoritesData({favoriteHotels}){
     const navigate=useNavigate()
     const dispatch=useDispatch()
     return <div className="">
+        
+
         <h1 className="text-xl text-slate-950 my-2 ">Your Favorite Hotels </h1>
         <div className="grid grid-cols-1  gap-4 sm:grid-cols-2 lg:grid-cols-3 ">
 
