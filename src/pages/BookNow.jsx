@@ -8,6 +8,7 @@ import ScrollToTop from "../components/ScrollToTop"
 import BookingSummary from "../components/BookingSummary"
 import { ArrowLeft } from "lucide-react"
 import BookBtn from "./BookButton"
+import ConfirmBook from "./ConfirmBook"
 export default function BookNow(){
     const {hotelid}=useParams()
 
@@ -33,6 +34,7 @@ export default function BookNow(){
     const paymentRef=useRef()
     const reqRef=useRef()
     const roomRef=useRef()
+    const [isBook,setIsBook]=useState(false)
 
    const navigate=useNavigate()
        
@@ -48,6 +50,8 @@ export default function BookNow(){
         <BookingForm nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
         <PaymentMethod paymentMethod={paymentMethod} paymentRef={paymentRef} setPaymentMethod={setPaymentMethod}/>
 <BookBtn nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef}  checkInDate={checkInDate} paymentRef={paymentRef} roomRef={roomRef} paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} />
-
+{
+    isBook?<ConfirmBook hotelDetails={hotelDetails} name={name} email={email} paymentMethod={paymentMethod} number={number} />:null
+}
     </div>
 }
