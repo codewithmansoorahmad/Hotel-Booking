@@ -10,6 +10,7 @@ import Hotels from "./pages/Hotels"
 import Favorites from "./pages/Favorites"
 import HotelDetailsPage from "./pages/HotelsDetailPage"
 import BookNow from "./pages/BookNow"
+import BookingSummary from "./components/BookingSummary"
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/favorites" element={<Favorites/>}/>
       <Route path="/hotel/:hotelid" element={<HotelDetailsPage/>}/>
       <Route path="/hotel/:hotelid/booking" element={<BookNow/>}/>
+      <Route path="/hotel/:hotelid/bookingConfirm" element={<BookingSummary/>}/>
      </Route>
      </Routes>  
     </>

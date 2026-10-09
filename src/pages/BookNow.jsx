@@ -49,9 +49,7 @@ export default function BookNow(){
         <BookingCheck hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef} checkInDate={checkInDate} setCheckInDate={setCheckInDate} checkOutDate={checkOutDate} setCheckOutDate={setCheckOutDate} todayDate={todayDate} name={name} room={room} setRoom={setRoom} roomRef={roomRef}  />
         <BookingForm nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
         <PaymentMethod paymentMethod={paymentMethod} paymentRef={paymentRef} setPaymentMethod={setPaymentMethod}/>
-<BookBtn nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef}  checkInDate={checkInDate} paymentRef={paymentRef} roomRef={roomRef} paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} />
-{
-    isBook?<ConfirmBook hotelDetails={hotelDetails} name={name} email={email} paymentMethod={paymentMethod} number={number} />:null
-}
+<BookBtn nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef}  checkInDate={checkInDate} paymentRef={paymentRef} roomRef={roomRef} paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} setIsBook={setIsBook} />
+
     </div>
 }

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom"
+
 export default function BookBtn({
   isBook,
   setIsBook,
@@ -12,11 +14,15 @@ export default function BookBtn({
   roomRef,
   checkInRef,
   CheckOutRef,
+  hotelDetails,
+
   nameRef,
   emailRef,
   phoneRef,
   paymentRef
+
 }) {
+    const navigate=useNavigate()
     function getBooking(){
 if(!nameRef.current.checkValidity()){
     nameRef.current.reportValidity()
@@ -33,7 +39,8 @@ if(!phoneRef.current.checkValidity()){
 if(!paymentRef.current.checkValidity()){
     paymentRef.current.reportValidity()
 }
-
+setIsBook(true)
+navigate(`/hotel/${hotelDetails.id}/bookingConfirm`)
     }
   return <div className="w-full 400:flex justify-end px-5 py-2">
 <button className="bg-slate-700 text-white px-5 py-2 rounded-md  cursor-pointer w-full hover:bg-slate-800 400:w-32 "  onClick={getBooking}>Book Now</button>
