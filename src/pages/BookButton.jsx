@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom"
+import { getBookingData } from "../redux/Slice"
+import { useDispatch } from "react-redux"
 
 export default function BookBtn({
   isBook,
@@ -14,6 +16,7 @@ export default function BookBtn({
   roomRef,
   checkInRef,
   CheckOutRef,
+  number,
   hotelDetails,
 
   nameRef,
@@ -22,6 +25,7 @@ export default function BookBtn({
   paymentRef
 
 }) {
+    const dispatch=useDispatch()
     const navigate=useNavigate()
     function getBooking(){
 if(!nameRef.current.checkValidity()){
@@ -39,6 +43,11 @@ if(!phoneRef.current.checkValidity()){
 if(!paymentRef.current.checkValidity()){
     paymentRef.current.reportValidity()
 }
+let data=Object.entries({hotelDetails,name,room,email,number,specailReq,checkInDate,checkOutDate,paymentMethod})
+console.log(data)
+let object=Object.fromEntries(data)
+dispatch(getBookingData({hotelDetails,name,room,email,number,specailReq,checkInDate,checkOutDate,paymentMethod}))
+console.log(Object.keys({hotelDetails,name,room,email,number,specailReq,checkInDate,checkOutDate,paymentMethod}))
 setIsBook(true)
 navigate(`/hotel/${hotelDetails.id}/bookingConfirm`)
     }
