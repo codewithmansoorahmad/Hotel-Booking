@@ -50,6 +50,5 @@ export default function BookNow(){
         <BookingForm nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
         <PaymentMethod paymentMethod={paymentMethod} paymentRef={paymentRef} setPaymentMethod={setPaymentMethod}/>
 <BookBtn nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef}  checkInDate={checkInDate} paymentRef={paymentRef} checkOutDate={checkOutDate} roomRef={roomRef} paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} setIsBook={setIsBook} />
-
     </div>
 }

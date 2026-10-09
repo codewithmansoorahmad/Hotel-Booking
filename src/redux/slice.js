@@ -5,7 +5,7 @@ const favoriteHotels=createSlice({
     name:"favorite",
     initialState:{
         hotels:JSON.parse(localStorage.getItem("favoritism"))||[],
-        book:[]
+        book:JSON.parse(localStorage.getItem("booking"))||[],
     },
     reducers:{
         addToFavorite:(state,action)=>{
@@ -19,6 +19,7 @@ const favoriteHotels=createSlice({
         },
         getBookingData(state,action){
 state.book=action.payload
+            localStorage.setItem("booking",JSON.stringify(state.book))
         }
     }
 })
