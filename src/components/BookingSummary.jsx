@@ -1,9 +1,8 @@
 import { MapPin } from "lucide-react"
 import { useSelector } from "react-redux"
 
-export default function BookingSummary(){
-const data=useSelector((state)=>state.favorite.book)
-console.log(data)
+export default function BookingSummary({data}){
+
 const room=data.hotelDetails.roomTypes.find((item)=>item.name==data.room)
     return <div className="w-full py-2 border-2 border-gray-200 px-2 my-2 rounded-lg">
        
@@ -31,14 +30,7 @@ const room=data.hotelDetails.roomTypes.find((item)=>item.name==data.room)
 
 
 
-<div>
-    <h1>Guest Information</h1>
-    <p>Name: {data.name}</p>
-    <p>Email: {data.email}</p>
-    <p>Phone: {data.number}</p>
-    <p>payment: {data.paymentMethod}</p>
-    {data.specialReq && <p>Special Request: {data.specialReq}</p>}
-</div>
+
 
     </div>
 }
