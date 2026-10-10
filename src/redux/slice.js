@@ -20,8 +20,13 @@ const favoriteHotels=createSlice({
         getBookingData(state,action){
 state.book=action.payload
             localStorage.setItem("booking",JSON.stringify(state.book))
+        },
+        getConfirmed(state){
+            state.book.isBooked=true
+            localStorage.setItem("booking",JSON.stringify(state.book))
+
         }
     }
 })
-export const {addToFavorite,removeFromFavorites,getBookingData}=favoriteHotels.actions
+export const {addToFavorite,getConfirmed,removeFromFavorites,getBookingData}=favoriteHotels.actions
 export default favoriteHotels.reducer

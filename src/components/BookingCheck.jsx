@@ -15,7 +15,7 @@ export default function BookingCheck({
   CheckOutRef,
   todayDate
 }) {
-  const roomTypes = hotelDetails.roomTypes;
+  const roomTypes = hotelDetails?.roomTypes;
   const check = new Date(checkInDate);
   const out = new Date(checkOutDate);
   const [error,setError]=useState("");
@@ -100,7 +100,7 @@ min={todayDate}
           onChange={(e)=>setRoom(e.target.value)}
           className=" my-1 cursor-pointer border text-[16px] flex items-center w-full  rounded-md px-2 py-2"
         >
-          {roomTypes.map((item, index) => {
+          {roomTypes?.map((item, index) => {
             return (
               <option
                 key={index}

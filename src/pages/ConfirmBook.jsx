@@ -5,9 +5,7 @@ import PriceSummary from "../components/PriceSummary";
 import BookingButtons from "../components/BookingButtons";
 
 export default function ConfirmBook(){
-
 const data=useSelector((state)=>state.favorite.book)
-console.log(data)
     return <div className="container my-3 mx-auto w-[calc(100%-16px)] sm:w-full box-border  border border-slate-200 shadow-sm px-4 pt-2  ">
         <div>
          <h1 className="text-xl text-slate-950 font-bold">Review Your Booking</h1>

@@ -12,6 +12,5 @@ const price=rooms.price*days
         <p className="flex justify-between ">Room x {days} nights <span>Rs: {price.toLocaleString()}</span></p>
         <p className="flex justify-between">Extra Charges <span>Rs:0</span></p>
         <p className="mt-4 font-bold flex justify-between  ">Total Amount <span className="text-green-600">Rs {price.toLocaleString()}</span></p>
-
     </div>
 }
