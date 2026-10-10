@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import BookingSummary from "../components/BookingSummary";
 import GuestInfo from "../components/BookGuestInfo";
+import PriceSummary from "../components/PriceSummary";
 
 export default function ConfirmBook(){
 
@@ -14,5 +15,6 @@ console.log(data)
 
         <BookingSummary data={data} />
         <GuestInfo data={data}/>
+        <PriceSummary data={data}/>
     </div>
 }
