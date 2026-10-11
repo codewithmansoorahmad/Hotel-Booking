@@ -1,14 +1,22 @@
 import { CheckIcon, Star } from "lucide-react"
+import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
+import { resetBooking } from "../redux/Slice"
 
 export default function Amenities({hoteldetails}){
     const navigate=useNavigate()
+    const dispatch=useDispatch()
+    function clickBookNow(hotel){
+localStorage.removeItem("booking")
+
+        navigate("/hotel/"+hotel.id+"/booking")
+        dispatch(resetBooking())
+    }
     return <div className="amenities">
         <div className="about-hotel">
             <h1>About Hotel</h1>
             <p>{hoteldetails.description}</p>
-         
-       
+
         </div>
                <div className="hotel-amenities">
                 <h1>Amenities</h1>
@@ -34,7 +42,7 @@ export default function Amenities({hoteldetails}){
                 <p>CheckIn: {hoteldetails.checkIn}</p>
                 <p>CheckOut: {hoteldetails.checkOut}</p>
 
-                <button onClick={()=>{navigate("/hotel/"+hoteldetails.id+"/booking")}}>Book Now</button>
+                <button onClick={()=>clickBookNow(hoteldetails)}>Book Now</button>
 
 
         </div>

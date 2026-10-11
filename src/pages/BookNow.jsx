@@ -19,6 +19,7 @@ export default function BookNow(){
      tomorow.setDate(tomorow.getDate()+1)
      const tomorrowDate=tomorow.toISOString().split("T")[0]
     const hotelDetails=hotels.find((item)=>item.id===Number(hotelid))
+    
 const data=useSelector((state)=>state.favorite.book)
 
     const [name,setName]=useState("")
@@ -38,15 +39,15 @@ const data=useSelector((state)=>state.favorite.book)
     const reqRef=useRef()
     const roomRef=useRef()
     const [isBook,setIsBook]=useState(false)
-    console.log(data.hotelDetails)
+
 
    const navigate=useNavigate()
-       
     return(
-        <div>
+        <div className="container  mx-auto my-4 w-[calc(100%-16px)] box-border  sm:w-3/4 lg:1/2 ">
+            <button onClick={()=>navigate( !data.hotelDetails?.isBooked?-1:"/hotel/"+hotelDetails.id)} className="flex items-center gap-1 mx-4 my-2 cursor-pointer  bg-gray-100 w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
     {
-        data.hotelDetails.isBooked? <div className="container  mx-auto w-[calc(100%-16px)] box-border bg-slate-50 border border-slate-200 shadow-sm sm:w-3/4 lg:1/2  ">
-        <button onClick={()=>navigate(-1)} className="flex items-center gap-1 mx-4 my-2 cursor-pointer  bg-gray-100 w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
+        !data.hotelDetails?.isBooked? <div className="container m-3  mx-auto w-[calc(100%-16px)] box-border bg-slate-50 border border-slate-200 shadow-sm sm:w-3/4 lg:1/2  ">
+        
         <ScrollToTop/>
         <div className="flex gap-1 justify-center items-center mt-1 flex-col">
         <h1>Book Your Stay</h1>

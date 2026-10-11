@@ -21,11 +21,14 @@ state.book=action.payload
             localStorage.setItem("booking",JSON.stringify(state.book))
         },
         getConfirmed(state){
-            state.book.isBooked=true
+            state.book.hotelDetails.isBooked=true
             localStorage.setItem("booking",JSON.stringify(state.book))
 
-        }
+        },
+        resetBooking: (state) => {
+    state.book = [];
+}
     }
 })
-export const {addToFavorite,getConfirmed,removeFromFavorites,getBookingData}=favoriteHotels.actions
+export const {addToFavorite,resetBooking,getConfirmed,removeFromFavorites,getBookingData}=favoriteHotels.actions
 export default favoriteHotels.reducer

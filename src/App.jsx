@@ -15,8 +15,6 @@ import ConfirmBook from "./pages/ConfirmBook"
 import { useSelector } from "react-redux"
 import CheckMark from "./components/CheckMark"
 function App() {
-const data=useSelector((state)=>state.favorite.book)
-console.log(data.hotelDetails)
   return (
     <>
     <Routes>
@@ -28,7 +26,7 @@ console.log(data.hotelDetails)
       <Route path="/hotels/:id" element={<Hotels/>}/>
       <Route path="/favorites" element={<Favorites/>}/>
       <Route path="/hotel/:hotelid" element={<HotelDetailsPage/>}/>
-      <Route path="/hotel/:hotelid/booking" element={data.hotelDetails.isBooked?<CheckMark/>:<BookNow/>}/>
+      <Route path="/hotel/:hotelid/booking" element={<BookNow/>}/>
       <Route path="/hotel/:hotelid/bookingConfirm" element={<ConfirmBook/>}/>
      </Route>
      </Routes>  
