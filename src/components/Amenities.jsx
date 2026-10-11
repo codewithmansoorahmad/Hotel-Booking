@@ -8,7 +8,6 @@ export default function Amenities({hoteldetails}){
     const dispatch=useDispatch()
     function clickBookNow(hotel){
 localStorage.removeItem("booking")
-
         navigate("/hotel/"+hotel.id+"/booking")
         dispatch(resetBooking())
     }

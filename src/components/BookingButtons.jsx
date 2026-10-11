@@ -17,7 +17,6 @@ dispatch(getConfirmed())
 navigate(`/hotel/${data.hotelDetails.id}/booking`)
 }
     return <div className=" w-full py-2  px-2  my-2 flex flex-col gap-2" >
-       
 <button
   className="flex w-full h-10 items-center justify-center gap-2 rounded-lg bg-green-800 text-white hover:bg-green-700 disabled:cursor-not-allowed"
   disabled={isState}
