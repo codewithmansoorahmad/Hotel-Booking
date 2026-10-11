@@ -15,7 +15,6 @@ const favoriteHotels=createSlice({
         removeFromFavorites(state,action){
             state.hotels=state.hotels.filter((item)=>item.id!==action.payload.id)
             localStorage.setItem("favoritism",JSON.stringify(state.hotels))
-
         },
         getBookingData(state,action){
 state.book=action.payload

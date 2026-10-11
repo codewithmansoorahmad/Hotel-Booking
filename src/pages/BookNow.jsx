@@ -42,7 +42,10 @@ const data=useSelector((state)=>state.favorite.book)
 
    const navigate=useNavigate()
        
-    return <div className="container  mx-auto w-[calc(100%-16px)] box-border bg-slate-50 border border-slate-200 shadow-sm sm:w-3/4 lg:1/2  ">
+    return(
+        <div>
+    {
+        data.hotelDetails.isBooked? <div className="container  mx-auto w-[calc(100%-16px)] box-border bg-slate-50 border border-slate-200 shadow-sm sm:w-3/4 lg:1/2  ">
         <button onClick={()=>navigate(-1)} className="flex items-center gap-1 mx-4 my-2 cursor-pointer  bg-gray-100 w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
         <ScrollToTop/>
         <div className="flex gap-1 justify-center items-center mt-1 flex-col">
@@ -54,6 +57,10 @@ const data=useSelector((state)=>state.favorite.book)
         <BookingForm nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} specailReq={specailReq} setSpecailReq={setSpecailReq}  setNumber={setNumber} name={name} setName={setName} email={email} setEmail={setEmail}  />
         <PaymentMethod paymentMethod={paymentMethod} paymentRef={paymentRef} setPaymentMethod={setPaymentMethod}/>
 <BookBtn nameRef={nameRef} emailRef={emailRef} phoneRef={phoneRef} reqRef={reqRef} number={number} hotelDetails={hotelDetails} checkOutRef={checkOutRef} checkInRef={checkInRef}  checkInDate={checkInDate} paymentRef={paymentRef} checkOutDate={checkOutDate} roomRef={roomRef} paymentMethod={paymentMethod} name={name} email={email} room={room} specailReq={specailReq} setIsBook={setIsBook} />
-<CheckMark/>
     </div>
+    :<CheckMark/>
+    }
+</div>
+
+)
 }
