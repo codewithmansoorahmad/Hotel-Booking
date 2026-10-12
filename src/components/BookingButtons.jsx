@@ -15,6 +15,12 @@ async function getBooking(){
     setIsState(false)
 dispatch(getConfirmed())
 navigate(`/hotel/${data.hotelDetails.id}/booking`)
+localStorage.removeItem("booking")
+}
+
+
+function cancelBooking(){
+  navigate("/hotel/"+data.hotelDetails.id)
 }
     return <div className=" w-full py-2  px-2  my-2 flex flex-col gap-2" >
 <button
@@ -28,6 +34,6 @@ navigate(`/hotel/${data.hotelDetails.id}/booking`)
   {isState ? "Booking..." : "Confirm Booking"}
 </button>
         <button className="w-full border-gray-200 cursor-pointer border-2 h-10 font-semibold rounded-lg">Edit Booking</button>
-        <button className="w-full border-gray-200 text-red-500 cursor-pointer font-semibold hover:text-red-600  border-2 h-10 rounded-lg">Cancel</button>
+        <button className="w-full border-gray-200 text-red-500 cursor-pointer font-semibold hover:text-red-600  border-2 h-10 rounded-lg" onClick={cancelBooking}>Cancel</button>
     </div>
 }
