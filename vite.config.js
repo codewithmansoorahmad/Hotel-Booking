@@ -1,8 +1,8 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-// https://vite.dev/config/
-export default defineConfig({
-base: "/Hotel-Booking/",
-  plugins: [react(),tailwindcss()],
-})
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig(({ command }) => ({
+  base: command === "serve" ? "/" : "/Hotel-Booking/",
+  plugins: [react(), tailwindcss()],
+}));

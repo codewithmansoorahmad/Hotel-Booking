@@ -89,7 +89,8 @@ export default function HotelsMain({
                 fill={favoriteHotels.find((hotel)=>hotel.id===item.id)?"red":"white"}
                 />
               </button>
-              <img src={item.image} width="300px" height="300px" alt="" />
+              <img   src={`${import.meta.env.BASE_URL}${item.image.slice(1)}`} width="300px" height="300px" alt="" />
+              
               <h1>{item.name}</h1>
               <h2>{item.destination}</h2>
               <p>

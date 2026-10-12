@@ -31,13 +31,13 @@ export default function ImageCursor({ hotelDetails }) {
 
           </button>
 
-          <img src={url} alt="" />
+          <img  src={`${import.meta.env.BASE_URL}${url.slice(1)}`} alt="" />
         </div>
         <div className="images">
           {hotelDetails.images.map((item, index) => {
             return (
               <img
-                src={item}
+    src={`${import.meta.env.BASE_URL}${item.slice(1)}`}
                 alt=""
                 key={index}
                 onClick={() => setUrl(item)}

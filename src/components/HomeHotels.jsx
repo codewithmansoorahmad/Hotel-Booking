@@ -15,7 +15,7 @@ const navigate=useNavigate()
         {
             homeHotels.map((hotel)=>{
                 return <div className="hotel" key={hotel.id} onClick={()=>navigate("hotel/"+hotel.id)}>
-                    <img src={hotel.image} alt="" />
+                    <img   src={`${import.meta.env.BASE_URL}${hotel.image.slice(1)}`} alt="" />
                     <h1>{hotel.name}</h1>
                     <h2>Rating: {hotel.rating} <Star size={20} fill="yellow"  className="star"/></h2>
                     <h3>{hotel.destination}</h3>
