@@ -35,7 +35,7 @@ localStorage.removeItem("booking")
             </div>
             <div className="information">
                 <h1 className="info">Booking Information</h1>
-                <img src={hoteldetails.image} alt="" />
+                <img  src={`${import.meta.env.BASE_URL}${hoteldetails.image.slice(1)}`} alt="" />
                 <p>RS: {hoteldetails.price} Per Night</p>
                 <p><span><Star/>{hoteldetails.rating},{hoteldetails.reviews} reviews</span></p>
                 <p>CheckIn: {hoteldetails.checkIn}</p>
