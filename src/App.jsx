@@ -27,6 +27,7 @@ function App() {
       <Route path="/favorites" element={<Favorites/>}/>
       <Route path="/hotel/:hotelid" element={<HotelDetailsPage/>}/>
       <Route path="/hotel/:hotelid/booking" element={<BookNow/>}/>
+      <Route path="/hotel/:hotelid/edit/booking" element={<BookNow/>}/>
       <Route path="/hotel/:hotelid/bookingConfirm" element={<ConfirmBook/>}/>
      </Route>
      </Routes>  

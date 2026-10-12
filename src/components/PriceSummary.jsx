@@ -4,7 +4,7 @@ export default function PriceSummary({data}){
     const days=(new Date(data.checkOutDate)-new Date(data.checkInDate)) /(1000*60*60*24)
     let rooms=data.hotelDetails.
 roomTypes.find((item)=>data.room ===item.name)
-const price=rooms.price*days
+const price=(rooms.price*days)
     console.log(rooms)
     console.log(days)
     return <div className="w-full py-2 border-2 border-gray-200 px-2 text-[12px] my-2 rounded-lg">

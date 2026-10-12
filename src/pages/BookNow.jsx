@@ -22,14 +22,14 @@ export default function BookNow(){
     
 const data=useSelector((state)=>state.favorite.book)
 
-    const [name,setName]=useState("")
-    const [email,setEmail]=useState("")
-    const [number,setNumber]=useState("")
-    const [room,setRoom]=useState(hotelDetails?.roomTypes[0].name)
-    const [checkInDate,setCheckInDate]=useState(todayDate)
-    const [checkOutDate,setCheckOutDate]=useState(tomorrowDate)
-    const [paymentMethod,setPaymentMethod]=useState("");
-    const [specailReq,setSpecailReq]=useState("");
+    const [name,setName]=useState(data.name||"")
+    const [email,setEmail]=useState(data.email||"")
+    const [number,setNumber]=useState(data.number||"")
+    const [room,setRoom]=useState(data.room||hotelDetails?.roomTypes[0].name)
+    const [checkInDate,setCheckInDate]=useState(data.checkInDate||todayDate)
+    const [checkOutDate,setCheckOutDate]=useState(data.checkOutDate||tomorrowDate)
+    const [paymentMethod,setPaymentMethod]=useState(data.paymentMethod||"");
+    const [specailReq,setSpecailReq]=useState(data.specailReq||"");
     const nameRef=useRef()
     const emailRef=useRef()
     const phoneRef=useRef()
@@ -39,12 +39,10 @@ const data=useSelector((state)=>state.favorite.book)
     const reqRef=useRef()
     const roomRef=useRef()
     const [isBook,setIsBook]=useState(false)
-
-
    const navigate=useNavigate()
     return(
         <div className="container  mx-auto my-4 w-[calc(100%-16px)] box-border  sm:w-3/4 lg:1/2 ">
-            <button onClick={()=>navigate( !data.hotelDetails?.isBooked?-1:"/hotel/"+hotelDetails.id)} className="flex items-center gap-1 mx-4 my-2 cursor-pointer  bg-gray-100 w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
+            <button onClick={()=>navigate( "/hotel/"+hotelDetails.id)} className="flex items-center gap-1 mx-4 my-2 cursor-pointer  bg-gray-100 w-30 h-9 rounded-md justify-center"><span><ArrowLeft/></span>back </button>
     {
         !data.hotelDetails?.isBooked? <div className="container m-3  mx-auto w-[calc(100%-16px)] box-border bg-slate-50 border border-slate-200 shadow-sm sm:w-3/4 lg:1/2  ">
         

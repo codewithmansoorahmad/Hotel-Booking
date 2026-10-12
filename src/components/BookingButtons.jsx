@@ -33,7 +33,7 @@ function cancelBooking(){
   )}
   {isState ? "Booking..." : "Confirm Booking"}
 </button>
-        <button className="w-full border-gray-200 cursor-pointer border-2 h-10 font-semibold rounded-lg">Edit Booking</button>
+        <button className="w-full border-gray-200 cursor-pointer border-2 h-10 font-semibold rounded-lg" onClick={()=>navigate(`/hotel/${data.hotelDetails.id}/edit/booking`)}>Edit Booking</button>
         <button className="w-full border-gray-200 text-red-500 cursor-pointer font-semibold hover:text-red-600  border-2 h-10 rounded-lg" onClick={cancelBooking}>Cancel</button>
     </div>
 }
