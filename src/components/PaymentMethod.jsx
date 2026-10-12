@@ -1,6 +1,5 @@
-export default function PaymentMethod({ data,paymentMethod, setPaymentMethod,paymentRef
+export default function PaymentMethod({ paymentMethod, setPaymentMethod,paymentRef
 }) {
-  console.log(paymentMethod)
   return (
     <div className="w-full px-6 py-4">
       <h1 className="my-4 text-xl border-b border-b-black">Payment Method </h1>

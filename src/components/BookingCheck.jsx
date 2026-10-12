@@ -12,7 +12,7 @@ export default function BookingCheck({
   setRoom,
   roomRef,
   checkInRef,
-  CheckOutRef,
+  checkOutRef,
   todayDate
 }) {
   const roomTypes = hotelDetails?.roomTypes;
@@ -21,8 +21,11 @@ export default function BookingCheck({
   const [error,setError]=useState("");
   const ref=useRef()
   console.log(roomTypes)
+  console.log(checkInDate)
+  console.log(checkOutDate)
+  console.log(todayDate)
   
-
+console.log(new Date(checkInDate)<new Date(checkOutDate))
   return (
     <div className="w-full py-4 px-6 box-border flex flex-col gap-2">
       <h1 className="my-4 text-xl border-b border-b-black">Stay Details</h1>
@@ -36,17 +39,10 @@ export default function BookingCheck({
             ref={checkInRef}
             value={checkInDate}
             min={todayDate}
-            
             onChange={(e) => {
                 setCheckInDate(e.target.value);
-                if(new Date(e.target.value)>=out){
-                  CheckOutRef.current.setCustomValidity("select chekOut Date date must after checkIn date")
-                  CheckOutRef.current.reportValidity()
-                  console.log("boss")
-                }
-                 if(new Date(e.target.value)<=check){
-                    setError("Check-in must be today or a future date ")
-                    return
+                 if(new Date(e.target.value)>=new Date(checkOutDate)){
+                    setError("Check-in must be before checOut ")
                 }
                 else{
                     setError("")
@@ -64,23 +60,22 @@ export default function BookingCheck({
             type="date"
             id="date-2"
             required
-min={todayDate}
+min={checkInDate}
             value={checkOutDate}
-            ref={CheckOutRef}
+            ref={checkOutRef}
 
             onChange={(e) => {
 
 
               setCheckOutDate(e.target.value);
-
-                if(new Date(e.target.value)<=check){
-
-                    setError("CheckOut Date Must be after CheckIn ")
-                    return
+  if(new Date(e.target.value)>=new Date(checkInDate)){
+                    setError("")
                 }
                 else{
                     setError("")
                 }
+
+               
             }}
             className="border w-full text-1xl my-1 cursor-pointer rounded-sm"
           />

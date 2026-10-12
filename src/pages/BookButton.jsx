@@ -15,7 +15,7 @@ export default function BookBtn({
   specailReq,
   roomRef,
   checkInRef,
-  CheckOutRef,
+  checkOutRef,
   number,
   hotelDetails,
 
@@ -28,6 +28,15 @@ export default function BookBtn({
     const dispatch=useDispatch()
     const navigate=useNavigate()
     function getBooking(){
+   if (checkInDate >= checkOutDate) {
+  checkOutRef.current.setCustomValidity(
+    "Check-out must be after check-in"
+  );
+  checkOutRef.current.reportValidity();
+  return;
+}
+
+checkOutRef.current.setCustomValidity("");
 if(!nameRef.current.checkValidity()){
     nameRef.current.reportValidity()
     return

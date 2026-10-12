@@ -5,8 +5,6 @@ export default function PriceSummary({data}){
     let rooms=data.hotelDetails.
 roomTypes.find((item)=>data.room ===item.name)
 const price=(rooms.price*days)
-    console.log(rooms)
-    console.log(days)
     return <div className="w-full py-2 border-2 border-gray-200 px-2 text-[12px] my-2 rounded-lg">
         <h1 className="font-bold text-[14px]">Price Summary</h1>
         <p className="flex justify-between ">Room x {days} nights <span>Rs: {price.toLocaleString()}</span></p>
