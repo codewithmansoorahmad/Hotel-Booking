@@ -53,6 +53,7 @@ export default function BookingForm({
           placeholder="Email"
           className="input"
           id="email"
+          pattern="^[A-Za-z0-9._%+\-]+@gmail\.com$"
           value={email}
           ref={emailRef}
              onKeyDown={(e)=>{
@@ -64,7 +65,6 @@ export default function BookingForm({
         }
           phoneRef.current.focus()
         }
-
        }}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -74,8 +74,10 @@ export default function BookingForm({
           type="tel"
           placeholder="03XXXXXXXXX"
           minLength={11}
+          maxLength={11}
           id="number"
           className="input"
+          pattern="[0-9]{11}"
           value={number}
           ref={phoneRef}
                onKeyDown={(e)=>{
@@ -88,10 +90,14 @@ export default function BookingForm({
         }
 
        }}
-          onChange={(e) => {setNumber(e.target.value)
-                 if(!e.target.checkValidity()){
-                        console.log("wrong")
-                }
+          onChange={(e) => {
+            let regex=/^[0-9]*$/
+
+            if(!regex.test(e.target.value)){
+              return
+            }
+            setNumber(e.target.value)
+                 
           }}
           required
         />
