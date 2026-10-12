@@ -1,8 +1,13 @@
 import { CheckCircle } from "lucide-react"
+import { useEffect } from "react"
 import { useSelector } from "react-redux"
 
 export default function CheckMark(){
 const data=useSelector((state)=>state.favorite.book)
+useEffect(()=>{
+const audio=new Audio("/sound.mp3.mp3")
+audio.play()
+},[])
     
     return <div className="w-full max-h-1/12 p-3 border-2 flex gap-3 border-b  border-gray-200   ">
         
