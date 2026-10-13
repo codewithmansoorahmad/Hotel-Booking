@@ -1,20 +1,20 @@
-# StayFinder - Hotel Booking Website
+# Hotel Booking Website
 
-StayFinder is a responsive hotel booking website built with React. It allows users to explore hotels, discover destinations across Pakistan, add hotels to favorites, and experience a simple booking process.
+This is a hotel booking website that I created using React. In this project, users can explore hotels, view hotel details, discover different destinations in Pakistan, and add their favorite hotels to a favorites list.
 
-## Features
+Users can also select check-in and check-out dates, choose a room type, enter their personal information, and go through the booking confirmation process.
 
-- Explore popular hotels and destinations.
-- View hotel details.
-- Add and remove favorite hotels.
-- Select check-in and check-out dates.
-- Choose room types.
-- Enter guest information.
-- View booking summaries and confirmation.
-- Responsive design for different screen sizes.
+### Features
+- Browse hotels and destinations
+- View hotel details
+- Add and remove favorite hotels
+- Select check-in and check-out dates
+- Choose room types
+- Enter guest information
+- View booking summary and confirmation
+- Responsive design for different screen sizes
 
-## Technologies Used
-
+### Technologies Used
 - React
 - JavaScript
 - Tailwind CSS
@@ -24,42 +24,20 @@ StayFinder is a responsive hotel booking website built with React. It allows use
 - Lucide React
 - Vite
 
-## Live Demo
-
+### Live Demo
 https://codewithmansoorahmad.github.io/Hotel-Booking/
 
-## Installation
+### Installation
 
-1. Clone the repository:
+1. Clone the repository.
+2. Open the project folder.
+3. Run `npm install`.
+4. Run `npm run dev` to start the development server.
 
-   ```bash
-   git clone https://github.com/codewithmansoorahmad/Hotel-Booking.git
-   ```
+### Note
+This project is frontend-only. The hotel data and booking process are handled on the client side. It does not include a backend or real payment processing.
 
-2. Navigate to the project folder:
-
-   ```bash
-   cd Hotel-Booking
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Start the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-## Note
-
-This is a frontend-only project. Hotel data and booking functionality are handled on the client side. It does not include a backend, database, or real payment processing.
-
-## Author
-
+### Author
 Mansoor Ahmad
 
 GitHub: https://github.com/codewithmansoorahmad
