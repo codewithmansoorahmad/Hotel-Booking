@@ -5,7 +5,18 @@ import { allDestinations } from "../JS service/DestinationsCode"
 import "../css/Hotels.css"
 import HotelsMain from "../components/HotelsMain"
 
-export default function Hotels(){
+export default function Hotels({
+  destination,
+  setDestination,
+  allProvinces,
+  setAllProvinces,
+  rating,
+  setRating,
+  price,
+  setPrice,
+  sort,
+  setSort,
+}){
       const {id}=useParams()
   const findDestination=  id ?allDestinations.find((item)=>item.id===Number(id)).name:"All"
   const findProvince=  id ?allDestinations.find((item)=>item.id===Number(id)).province:"All"

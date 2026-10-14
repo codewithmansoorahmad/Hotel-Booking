@@ -16,8 +16,8 @@ import { useSelector } from "react-redux"
 import CheckMark from "./components/CheckMark"
 import { useState } from "react"
 function App() {
-  const [destination,setDestination]=useState(findDestination)
-  const [allProvinces,setAllProvinces]=useState(findProvince)
+  const [destination,setDestination]=useState("All")
+  const [allProvinces,setAllProvinces]=useState("All")
   const [rating,setRating]=useState("")
   const [price,setPrice]=useState("Any Price")
   const [sort,setSort]=useState("")
