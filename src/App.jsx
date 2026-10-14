@@ -45,7 +45,7 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/destinations" element={<Destinations/>}/>
       <Route path="/hotels" element={<Hotels {...hotelsState}/>}/>
-      <Route path="/hotels/:id" element={<Hotels/>}/>
+      <Route path="/hotels/:id" element={<Hotels {...hotelsState} />}/>
       <Route path="/favorites" element={<Favorites/>}/>
       <Route path="/hotel/:hotelid" element={<HotelDetailsPage/>}/>
       <Route path="/hotel/:hotelid/booking" element={<BookNow/>}/>
