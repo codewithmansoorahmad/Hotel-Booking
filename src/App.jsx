@@ -22,7 +22,19 @@ function App() {
   const [price,setPrice]=useState("Any Price")
   const [sort,setSort]=useState("")
 
- 
+   const hotelsState = {
+    destination,
+    setDestination,
+    allProvinces,
+    setAllProvinces,
+    rating,
+    setRating,
+    price,
+    setPrice,
+    sort,
+    setSort,
+  };
+
   return (
     
     <>
@@ -32,7 +44,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/destinations" element={<Destinations/>}/>
-      <Route path="/hotels" element={<Hotels/>}/>
+      <Route path="/hotels" element={<Hotels {...hotelsState}/>}/>
       <Route path="/hotels/:id" element={<Hotels/>}/>
       <Route path="/favorites" element={<Favorites/>}/>
       <Route path="/hotel/:hotelid" element={<HotelDetailsPage/>}/>
