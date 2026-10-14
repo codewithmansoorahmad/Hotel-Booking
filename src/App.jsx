@@ -14,9 +14,19 @@ import BookingSummary from "./components/BookingSummary"
 import ConfirmBook from "./pages/ConfirmBook"
 import { useSelector } from "react-redux"
 import CheckMark from "./components/CheckMark"
+import { useState } from "react"
 function App() {
+  const [destination,setDestination]=useState(findDestination)
+  const [allProvinces,setAllProvinces]=useState(findProvince)
+  const [rating,setRating]=useState("")
+  const [price,setPrice]=useState("Any Price")
+  const [sort,setSort]=useState("")
+
+ 
   return (
+    
     <>
+    
     <Routes>
       <Route element={<Header/>} >
       <Route path="/" element={<Home/>}/>

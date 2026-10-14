@@ -16,7 +16,6 @@ export default function HotelDetailHead({hotelDetails}){
     <div className="hotel-location">
         <p><span><MapPin/></span> {hotelDetails.location},</p>
         <p>{hotelDetails.province}</p>
-
     </div>
     </div>
 }

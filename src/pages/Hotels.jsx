@@ -9,11 +9,6 @@ export default function Hotels(){
       const {id}=useParams()
   const findDestination=  id ?allDestinations.find((item)=>item.id===Number(id)).name:"All"
   const findProvince=  id ?allDestinations.find((item)=>item.id===Number(id)).province:"All"
-const [destination,setDestination]=useState(findDestination)
-const [allProvinces,setAllProvinces]=useState(findProvince)
-const [rating,setRating]=useState("")
-const [price,setPrice]=useState("Any Price")
-const [sort,setSort]=useState("")
 
 
  return   <div className="hotels">
