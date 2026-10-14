@@ -22,7 +22,6 @@ Users can also select check-in and check-out dates, choose a room type, enter th
 - Redux Toolkit
 - React Router DOM
 - Lucide React
-- Vite
 
 ### Live Demo
 https://codewithmansoorahmad.github.io/Hotel-Booking/
