@@ -15,6 +15,7 @@ import ConfirmBook from "./pages/ConfirmBook"
 import { useSelector } from "react-redux"
 import CheckMark from "./components/CheckMark"
 import { useState } from "react"
+import PageNotFound from "./pages/404"
 function App() {
   const [destination,setDestination]=useState("All")
   const [allProvinces,setAllProvinces]=useState("All")
@@ -52,7 +53,7 @@ function App() {
       <Route path="/hotel/:hotelid/edit/booking" element={<BookNow/>}/>
       <Route path="/hotel/:hotelid/bookingConfirm" element={<ConfirmBook/>}/>
      </Route>
-     <Route path="/*" element={}
+     <Route path="*" element={<PageNotFound/>}/>
      </Routes>  
     </>
 
