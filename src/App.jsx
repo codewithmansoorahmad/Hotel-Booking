@@ -52,6 +52,7 @@ function App() {
       <Route path="/hotel/:hotelid/edit/booking" element={<BookNow/>}/>
       <Route path="/hotel/:hotelid/bookingConfirm" element={<ConfirmBook/>}/>
      </Route>
+     <Route path="/*" element={}
      </Routes>  
     </>
 
